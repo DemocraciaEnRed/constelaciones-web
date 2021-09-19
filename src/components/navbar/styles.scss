@@ -1,0 +1,71 @@
+@import "~bulma/sass/utilities/_all.sass";
+
+@media screen and (min-width: 1024px) {
+    .navbar-burger {
+        display: block;
+    }
+    .navbar-menu {
+        display: none;
+        &.is-active {
+            display: block;
+        }
+    }
+    .navbar-item {
+        display: block;
+    }
+}
+
+.navbar {
+    width: 50px;
+    background: $black;
+    position: absolute;
+    height: 100%;
+    padding-left: 10px;
+    box-sizing: content-box;
+}
+
+.navbar-brand {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+        transform: rotate(-90deg);
+        width: 120px;
+        transform-origin: 0 0;
+        word-break: normal;
+    }
+}
+.navbar-burger {
+    color: $white;
+    margin: 0;
+    &:hover {
+        color: #FCF463;
+    }
+}
+
+.navbar-menu.is-active {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    height: 100vh;
+    background: $black;
+    width: 100vw;
+}
+
+.navbar-enter {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  .navbar-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  .navbar-exit {
+    opacity: 1;
+  }
+  .navbar-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+  }
