@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import logo from "./assets/logo.svg"
+import logo from "./assets/logo-constelaciones.svg"
 import "./styles.scss"
 import Navbar from '../components/navbar'
 import { CSSTransition } from 'react-transition-group';
