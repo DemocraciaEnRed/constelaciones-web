@@ -32,11 +32,11 @@ const Navbar = () => {
                 <p className="title is-6">CONSTELACIONES DE INCIDENCIA</p>
             </div>
             <div id='navbarBasicExample' className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
-            <div className='navbar-item'>
+            <div className='navbar-item navbar-item-wrapper'>
                 <a href='/' className='navbar-item'>
                 Home
                 </a>
-                <a href='/' className='navbar-item'>
+                <a href='/mujeres' className='navbar-item'>
                 Mujeres
                 </a>
                 <a href='/' className='navbar-item'>

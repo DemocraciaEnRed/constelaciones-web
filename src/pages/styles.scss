@@ -11,6 +11,11 @@ $navbar-item-color: white;
 $navbar-item-hover-color: $primary;
 $navbar-item-hover-background-color: transparent;
 $navbar-item-active-color: $primary;
+$breadcrumb-item-color: white;
+$breadcrumb-item-active-color: $primary;
+$breadcrumb-item-separator-color: white;
+$breadcrumb-item-hover-color: $primary;
+$family-secondary: 'Headland One', sans-serif;
 
 // Import only what you need from Bulma
 @import "~bulma/bulma.sass";
@@ -25,3 +30,177 @@ html, body {
     right: 20px;
     bottom: 20px;
 }
+
+.main-container {
+    margin-left: 80px;
+}
+
+@include desktop {
+    .vertical-title-desktop {
+        transform: rotate(-90deg);
+        transform-origin: 0 0;
+        color: rgba(255, 255, 255, 0.25) !important;
+        text-transform: uppercase;
+        position: absolute;
+        left: 20px;
+        top: 400px;
+    }
+    .py-6-desktop {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .ml-6-desktop {
+        margin-left: 3rem !important;
+    }
+    .pl-6-desktop {
+        padding-left: 3rem !important;
+    }
+}
+
+// mujeres
+.liderezas-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+    opacity: 0.8;
+    cursor: pointer;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+// mujer
+.img-mujer img {
+    height: 450px;
+    width: auto;
+}
+
+.scroll-to-links {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.circle-link {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    background-color: $black;
+    position:relative;
+    &.circle-link-big {
+        width: 120px;
+        height: 120px;
+    }
+    &:hover {
+        color: $primary;
+    }
+    span:nth-child(1) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        width: 100%;
+        left: 0;
+    }
+    span:nth-child(2) {
+        position: absolute;
+        content: "";
+        left: -31px;
+        top: 101%;
+        width: 49px;
+        border-top: 1px solid white;
+        transform: rotate(-45deg);
+    }
+    span:nth-child(3) {
+        position: absolute;
+        content: "";
+        right: -31px;
+        top: 101%;
+        width: 49px;
+        border-top: 1px solid white;
+        transform: rotate(45deg);
+    }
+    span:nth-child(4) {
+        position: absolute;
+        content: "";
+        left: -31px;
+        top: -2%;
+        width: 49px;
+        border-top: 1px solid white;
+        transform: rotate(-135deg);
+    }
+    span:nth-child(5) {
+        position: absolute;
+        content: "";
+        right: -31px;
+        top: -2%;
+        width: 49px;
+        border-top: 1px solid white;
+        transform: rotate(135deg);
+    }
+}
+
+@include touch {
+    .mujer-container {
+        flex-direction: column;
+    }
+    .img-mujer img {
+        width: 100%;
+        height: auto;
+    }
+    .scroll-to-links {
+        transform: scale(0.8);
+    }
+}
+
+.info-timeline ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li span.timeline-circle {
+        position: relative;
+        border: 2px solid white;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        margin-top: 50px;
+        background-color: black;
+        z-index: 2;
+        display: inline-block;
+      }
+      li:not(:first-of-type) span.timeline-circle::before {
+        position: absolute;
+        border: 1px solid white;
+        width: 0;
+        height: 50px;
+        display: block;
+        content: '';
+        left: 50%;
+        z-index: 1;
+        top: -54px;
+        margin-left: -1px;
+      }
+      li span.text {
+        color: white;
+        text-transform: uppercase;
+      }
+      li:last-of-type { 
+        span.timeline-circle{
+            border-color: $primary;
+        }
+        span.text {
+            color: $primary;
+        }
+      }
+  }
