@@ -35,6 +35,21 @@ html, body {
     margin-left: 80px;
 }
 
+@include touch {
+    .main-logo {
+        display: flex;
+        flex-direction: column;
+        text-align: center !important;
+        .title {
+            font-size: 30px;
+        }
+    }
+    .title-intro {
+        font-size: 18px;
+        padding: 0!important;
+    }
+}
+
 @include desktop {
     .vertical-title-desktop {
         transform: rotate(-90deg);

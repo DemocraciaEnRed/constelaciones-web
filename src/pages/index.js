@@ -39,7 +39,7 @@ const IndexPage = () => {
       {intro && 
       <section className="hero is-fullheight">
         {slide === 0 && 
-          <div className="hero-body is-justify-content-center">
+          <div className="hero-body is-justify-content-center main-logo">
           <figure className="image px-6">
             <img src={logo} />
           </figure>
@@ -52,7 +52,7 @@ const IndexPage = () => {
         }
         {slide === 1 && 
           <div className="hero-body is-justify-content-center">
-          <h2 className="title has-text-centered">
+          <h2 className="title has-text-centered title-intro">
             Constelaciones es una apuesta para 
             <br />
             <span className="has-text-primary">visibilizar los liderazgos de mujeres migrantes y organizaciones sociales</span>
@@ -63,7 +63,7 @@ const IndexPage = () => {
         }
         { slide === 2 &&
          <div className="hero-body is-justify-content-center">
-          <h3 className="title has-text-centered px-6 mx-6">
+          <h3 className="title has-text-centered px-6 mx-6 title-intro">
           Esta iniciativa es realizada en el marco del proyecto Escuelita Tu Bandera es Mi Bandera, un proyecto colectivo realizado por Fundación Artemisas y el Derecho a No Obedecer, La Fundación Konrad Adenauer y el Centro para el Desarrollo Global (Center for Global Development) en donde fortalecimos las capacidades de participación e incidencia ciudadana, de lideresas de organizaciones migrantes y de las comunidades de acogida de Cali, Bogotá y Cúcuta.
           </h3>
         </div>
