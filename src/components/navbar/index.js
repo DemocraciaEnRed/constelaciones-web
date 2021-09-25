@@ -42,7 +42,7 @@ const Navbar = () => {
                 <a href='/' className='navbar-item'>
                 Quienes somos
                 </a>
-                <a href='/' className='navbar-item'>
+                <a href='/organizaciones' className='navbar-item'>
                 Organizaciones
                 </a>
             </div>
