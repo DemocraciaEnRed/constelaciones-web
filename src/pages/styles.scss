@@ -75,15 +75,35 @@ html, body {
 
 // mujeres
 .liderezas-img {
-    border-radius: 50%;
+    display: inline-block;
     width: 200px;
     height: 200px;
-    overflow: hidden;
-    margin: 0 auto;
-    opacity: 0.8;
-    cursor: pointer;
-    &:hover {
+    position: relative;
+    figure {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        margin: 0 auto;
         opacity: 1;
+        cursor: pointer;
+    }
+    
+    .text {
+        display: none;
+        margin-top: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+    &:hover {
+        figure {
+            opacity: 0.7;
+        }
+        .text {
+            display: block;
+        }
     }
 }
 
@@ -177,7 +197,11 @@ html, body {
     }
 }
 
-.info-timeline ul {
+.info-timeline {
+    .pointer-map {
+        margin-left: 90px;
+    }
+    ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -185,37 +209,48 @@ html, body {
         position: relative;
         border: 2px solid white;
         border-radius: 100%;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 40px;
         background-color: black;
         z-index: 2;
         display: inline-block;
       }
+      li:first-of-type span.timeline-circle{
+          margin-top: 20px;
+      }
       li:not(:first-of-type) span.timeline-circle::before {
         position: absolute;
-        border: 1px solid white;
+        border: 1px dotted white;
         width: 0;
-        height: 50px;
+        height: 40px;
         display: block;
         content: '';
         left: 50%;
         z-index: 1;
-        top: -54px;
+        top: -45px;
         margin-left: -1px;
       }
       li span.text {
         color: white;
         text-transform: uppercase;
+        display: inline-block;
+        width: 120px;
+        text-align: right;
+        padding-right: 20px;
+        position: relative;
+        top: -15px;
       }
       li:last-of-type { 
         span.timeline-circle{
             border-color: $primary;
+            background-color: $primary;
         }
         span.text {
             color: $primary;
         }
       }
   }
+}
