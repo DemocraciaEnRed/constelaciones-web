@@ -254,3 +254,9 @@ html, body {
       }
   }
 }
+
+.image-sepia img {
+    filter: sepia(1);
+    max-height: 300px;
+    width: auto;
+}

@@ -12,7 +12,7 @@ if (typeof window !== "undefined") {
     new SmoothScroll('a[href*="#"]');
 }
 
-const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, palabras_clave, imagen } }) => {
+const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, palabras_clave, imagen, imagen_extra, audio } }) => {
     return (
       <main>
         <title>Mujeres - {title} </title>
@@ -37,13 +37,15 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
                             <span aria-hidden={true}  />
                             <span aria-hidden={true}  />
                         </a>
-                        <a className="circle-link my-6" href="#motivacion">
-                            <span>motivación</span>
-                            <span aria-hidden={true}  />
-                            <span aria-hidden={true}  />
-                            <span aria-hidden={true}  />
-                            <span aria-hidden={true}  />
-                        </a>
+                        {motivacion &&
+                            <a className="circle-link my-6" href="#motivacion">
+                                <span>motivación</span>
+                                <span aria-hidden={true}  />
+                                <span aria-hidden={true}  />
+                                <span aria-hidden={true}  />
+                                <span aria-hidden={true}  />
+                            </a>
+                        }
                     </div>
                 </div>
                 <div className="container pl-0 ml-0 pb-6">
@@ -67,11 +69,28 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
                             </div>
                         </div>
                     </div>
+                    {motivacion &&
+                        <div id="motivacion">
+                            <h4 className="title has-text-primary is-size-5 has-text-weight-semibold">¿Qué te motivó a ser lidereza?</h4>
+                            <p className="has-text-white pb-6">{motivacion}</p>
+                        </div>
+                    }
+                    {imagen_extra &&
+                        <div className="my-6">
+                            <h4 className="title has-text-primary is-size-5 has-text-weight-semibold">¿Qué te representa?</h4>
+                            <figure className="image image-sepia">
+                                <img src={`/assets/mujeres/${imagen_extra}`} />
+                            </figure>
+                        </div>
+                    }
 
-                    <div id="motivacion">
-                        <h4 className="title has-text-primary is-size-5 has-text-weight-semibold">¿Qué te motivó a ser lidereza?</h4>
-                        <p className="has-text-white pb-6">{motivacion}</p>
-                    </div>
+                    {audio &&
+                        <div className="my-6">
+                            <h4 className="title has-text-primary is-size-5 has-text-weight-semibold">Escuchando a {title}</h4>
+                            {/* TODO: ADD AUDIO PLAYER */}
+                        </div>
+                    }
+                    
                 </div>
                 <a className="circle-link circle-link-big my-6 mx-auto" href="/mujeres">
                     <span>Seguí conociendo a las liderezas</span>

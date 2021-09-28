@@ -8,6 +8,19 @@ import { useMujeresData } from '../hooks/useMujeresData'
 
 const Mujeres = () => {
     const mujeresData = useMujeresData()
+    const IS_HALF = 'is-half';
+    const IS_THIRD = 'is-one-third';
+    const classColumn = [ IS_HALF,IS_HALF, IS_THIRD,IS_THIRD,IS_THIRD ];
+    let counter = 0;
+    const getClassName = () => { 
+        let classNameColumn;
+         if(counter > classColumn.length - 1 ){
+             counter = 0 
+         }
+        classNameColumn = classColumn[counter];
+        counter++;
+        return classNameColumn;
+    }
     return (
       <main>
         <title>Mujeres - CONSTELACIONES DE INCIDENCIA</title>
@@ -25,54 +38,26 @@ const Mujeres = () => {
                 </div>
                 <div className="container has-text-centered">
                 <h3 className="title is-size-4 mb-6"><span className="has-text-primary">Clickeá en las liderezas</span> para conocer toda su historia</h3>
-                    <div className="columns mt-6">
+                    <div className="columns is-multiline mt-6">
                         {
-                          mujeresData.map(({node: { imagen, title}}, index) => {
-                            //todo: update grid  
-                            const classn = index;
+                          mujeresData.map(({node: { imagen, title } }) => {
+                            const classNameColumn = getClassName();
                                 return (
-                                    <div className={`column ${classn}`}>
-                                    <a href={`/mujer/${slugify(title)}`} className="liderezas-img">
-                                        <figure> 
-                                            <img src={`/assets/mujeres/${imagen}`} alt={title}/>
-                                        </figure>
-                                        <span className="text has-text-white">Conocé la historia de <br /><span className="is-uppercase has-text-weight-bold">{title}</span></span>
-                                    </a>
-                                </div>
+                                    <>
+                                        <div className={`column ${classNameColumn}`}>
+                                            <a href={`/mujer/${slugify(title)}`} className="liderezas-img">
+                                                <figure> 
+                                                    <img src={`/assets/mujeres/${imagen}`} alt={title}/>
+                                                </figure>
+                                                <span className="text has-text-white">Conocé la historia de <br /><span className="is-uppercase has-text-weight-bold">{title}</span></span>
+                                            </a>
+                                        </div>
+                                    </>
                                 )
                             }
                           )  
                         }
                     </div>
-                    {/* <div className="columns mt-6 pt-6">
-                        <div className="column">
-                            <figure className="liderezas-img"> 
-                                <img src={'/assets/mujeres/SS1.jpeg'} />
-                            </figure>
-                        </div>
-                        <div className="column">
-                            <figure className="liderezas-img"> 
-                                <img src={'/assets/mujeres/SS2.jpeg'} />
-                            </figure>
-                        </div>
-                    </div>
-                    <div className="columns mt-6">
-                        <div className="column">
-                            <figure className="liderezas-img"> 
-                                <img src={'/assets/mujeres/SS3.jpeg'} />
-                            </figure>
-                        </div>
-                        <div className="column">
-                            <figure className="liderezas-img"> 
-                                <img src={'/assets/mujeres/SS4.jpeg'} />
-                            </figure>
-                        </div>
-                        <div className="column">
-                            <figure className="liderezas-img"> 
-                                <img src={'/assets/mujeres/SS5.jpeg'} />
-                            </figure>
-                        </div>
-                    </div> */}
                 </div>
             </div>
           </section>
