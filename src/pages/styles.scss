@@ -59,6 +59,10 @@ html, body {
         position: absolute;
         left: 20px;
         top: 400px;
+        &.organizaciones {
+            top: 450px;
+            left: 45px;
+        }
     }
     .py-6-desktop {
         padding-top: 3rem !important;
