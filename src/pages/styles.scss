@@ -16,6 +16,10 @@ $breadcrumb-item-active-color: $primary;
 $breadcrumb-item-separator-color: white;
 $breadcrumb-item-hover-color: $primary;
 $family-secondary: 'Headland One', sans-serif;
+$table-background-color: #0a0a0a;
+$table-color: white;
+$table-head-cell-color: white;
+$table-cell-border: 1px solid #FCF463;
 
 // Import only what you need from Bulma
 @import "~bulma/bulma.sass";

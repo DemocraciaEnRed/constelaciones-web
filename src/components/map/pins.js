@@ -8,26 +8,30 @@ const Pins = ({ data, onClick }) => {
 
     const SIZE = 20;
     return data.map((city, index) => {
-      const long = Number(city[5].replace(/,/g, '.'));
-      const lat = Number(city[4].replace(/,/g, '.'));
+      const long = Number(city.long.replace(/,/g, '.'));
+      const lat = Number(city.lat.replace(/,/g, '.'));
+      const cityInfo = {...city, lat, long};
       if(lat && long) {
-        return (
-          <Marker key={`marker-${index}`} longitude={long} latitude={lat}>
-            <svg
-              height={SIZE}
-              viewBox="0 0 24 24"
-              style={{
-                cursor: 'pointer',
-                fill: '#d00',
-                stroke: 'none',
-                transform: `translate(${-SIZE / 2}px,${-SIZE}px)`
-              }}
-              onClick={() => onClick(city)}
-            >
-              <path d={ICON} />
-            </svg>
-          </Marker>
-        )
+          return (
+            <Marker key={`marker-${index}`} longitude={long} latitude={lat}>
+              <svg
+                height={SIZE}
+                viewBox="0 0 24 24"
+                style={{
+                  cursor: 'pointer',
+                  fill: '#FCF463',
+                  stroke: 'none',
+                  transform: `translate(${-SIZE / 2}px,${-SIZE}px)`
+                }}
+                onClick={() => onClick(cityInfo)}
+              >
+                <path d={ICON} />
+              </svg>
+            </Marker>
+          )
+        }
+      else {
+        return (<></>)
       }
       }   
     );

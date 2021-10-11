@@ -16,7 +16,6 @@ const Map = ({ data }) => {
     });
 
     const [popupInfo, setPopupInfo] = useState(null);
-
     return (
         <div className="map">
             <ReactMapGL
@@ -32,8 +31,8 @@ const Map = ({ data }) => {
                 <Popup
                     tipSize={5}
                     anchor="top"
-                    longitude={popupInfo.longitude}
-                    latitude={popupInfo.latitude}
+                    longitude={popupInfo.long}
+                    latitude={popupInfo.lat}
                     closeOnClick={false}
                     onClose={setPopupInfo}
                 >

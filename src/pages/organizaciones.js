@@ -5,15 +5,64 @@ import Navbar from '../components/navbar'
 import Breadcrumb from '../components/breadcrumb'
 import BreadcrumbItem from '../components/breadcrumb/item'
 import Map from '../components/map'
+import Table from '../components/table'
 
 const Organizaciones = () => {
-    const [ data, setData ] = useState(null)
+    const [ data, setData ] = useState([])
     const [ dataLoaded, setDataLoaded ] = useState(false) 
+    const columns = React.useMemo(
+      () => [
+        {
+          Header: 'Organización',
+          accessor: 'title',
+        },
+        {
+          Header: 'Descripción',
+          accessor: 'description',
+        },
+        {
+          Header: 'Ciudad',
+          accessor: 'city',
+        },
+        {
+          Header: 'País',
+          accessor: 'country',
+        },
+        {
+          Header: 'Contacto',
+          accessor: 'contact',
+          Cell: ({ row }) => {
+            let link = row.original.contact;
+            if(row.original.contact && row.original.contact.includes('@')) {
+              link = `mailto:${row.original.contact}`;
+            }
+            return (
+              <a className="has-text-primary" href={link}>{row.original.contact}</a>
+            )
+          }
+        },
+      ],
+      []
+    )
+
+    const mapData = (data) => {
+      const titles = [...data[0]]
+      data.shift();
+      const newarray = []
+      data.map((elem, mainIndex) => {
+        newarray[mainIndex] = {}
+        elem.map((value, index) => {
+          newarray[mainIndex][titles[index]] = value
+        })
+      })
+      return newarray;
+    }
+
     useEffect(() => {
       axios.get(`https://sheets.googleapis.com/v4/spreadsheets/1b5c72bq6SCtlfOqpXu6V-rZN8Tq1eJ3jgw-fYO4jEqQ/values/mapeo?key=${process.env.SHEETS_API_KEY}`)
       .then((res) => {
-        delete res.data.values[0]
-        setData(res.data.values)
+        const dataFormatted = mapData(res.data.values);
+        setData(dataFormatted)
       })
       .then(() => {
         setDataLoaded(true)
@@ -34,7 +83,10 @@ const Organizaciones = () => {
                 <div className="container has-text-left py-6-desktop ml-6-desktop pl-6-desktop">
                   <p className="has-text-white is-size-5 pb-6 pt-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies et semper dolor enim at. Condimentum ipsum lectus vulputate tempor, a. Id felis quisque suspendisse id elit. Nec in at pharetra arcu aenean et. Molestie tempus pharetra, velit ultrices enim elit tellus. Maecenas cras ipsum placerat risus.</p>
                   {dataLoaded && 
-                    <Map data={data} />
+                    <>
+                      <Map data={data} />
+                      <Table data={data} columns={columns} />
+                    </>
                   }
                 </div>
             </div>
