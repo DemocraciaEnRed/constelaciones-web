@@ -1,0 +1,75 @@
+$dot-color: #FCF463;
+$dot-count: 10; //cantidad de mujeres con pagina individual
+  
+// dots
+.sky {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.dot {
+    cursor: pointer;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    left: 50%;
+    animation: 160s ease both infinite alternate; // go through the path slowly
+    .text {
+        display: none;
+        width:150px;
+        font-size: 25px;
+    }
+    &:hover {
+        .text {
+            display: block;
+        }
+    }
+    &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: $dot-color;
+        transform-origin: -1rem;
+        animation: lighting ease both infinite, auto-rotating ease both infinite;
+        //animation: lighting infinite;
+        animation-duration: 40000ms;
+    }
+    @for $i from 1 through $dot-count {
+        &:nth-of-type(#{$i}) {
+            animation-name: move-path-#{$i};
+            &:before {
+                animation-duration: 30000ms;
+                //animation-delay: random(6000) + 1000ms, 0s; // less than max duration
+            }
+        }
+        $steps: random(15) + 10;
+        @keyframes move-path-#{$i} {
+            @for $step from 0 through $steps {
+                #{$step / $steps * 100%} {
+                transform: translateX(random(100) - 50vw)
+                    translateY(random(100) - 50vh)
+                    scale(random(70) / 100 + 0.5);
+                }
+            }
+        }
+    }
+}
+
+@keyframes lighting {
+    0%, 100% {
+        opacity: 0;
+    }
+    5%, 80% {
+        opacity: 1;
+        box-shadow: 0 0 0.3rem 0.05rem $dot-color;
+    }
+}
+@keyframes auto-rotating {
+    to {
+        transform: rotate(360deg);
+    }
+}

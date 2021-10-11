@@ -3,7 +3,9 @@ import logo from "./assets/logo-constelaciones.svg"
 import "./styles.scss"
 import Navbar from '../components/navbar'
 import { CSSTransition } from 'react-transition-group';
-
+import { useMujeresData } from '../hooks/useMujeresData'
+import Constelaciones from '../components/constelaciones';
+import Particle from '../components/particle';
 
 const IndexPage = () => {
   const [intro, setIntro] = useState(true);
@@ -25,6 +27,7 @@ const IndexPage = () => {
       }
     }, 15000)
   }, [])
+  const mujeresData = useMujeresData()
   return (
     <main>
       <title>CONSTELACIONES DE INCIDENCIA</title>
@@ -34,14 +37,18 @@ const IndexPage = () => {
         classNames="navbar"
         unmountOnExit
       >
+        <>
         <Navbar />
+        <Constelaciones />
+        <Particle mujeres={mujeresData} />
+        </>
       </CSSTransition>
       {intro && 
       <section className="hero is-fullheight">
         {slide === 0 && 
           <div className="hero-body is-justify-content-center main-logo">
           <figure className="image px-6">
-            <img src={logo} />
+            <img src={logo} alt="Constelaciones de Incidencia"/>
           </figure>
           <h1 className="title is-2">
             CONSTELACIONES
