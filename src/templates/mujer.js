@@ -1,5 +1,6 @@
 import React from "react"
 import slugify from 'slugify'
+import AudioPlayer from 'react-h5-audio-player';
 import "../pages/styles.scss"
 import Navbar from '../components/navbar'
 import Breadcrumb from '../components/breadcrumb'
@@ -87,9 +88,9 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
                     {audio &&
                         <div className="my-6">
                             <h4 className="title has-text-primary is-size-5 has-text-weight-semibold">Escuchando a {title}</h4>
-                            <audio src={`/assets/mujeres/${audio}`} controls>
-                                 Tu navegador no soporta reproductor de audio.
-                            </audio>
+                            <AudioPlayer
+                                src={`/assets/mujeres/${audio}`}
+                            />
                         </div>
                     }
                     

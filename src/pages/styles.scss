@@ -24,6 +24,18 @@ $table-cell-border: 1px solid #FCF463;
 // Import only what you need from Bulma
 @import "~bulma/bulma.sass";
 
+
+$rhap_theme-color: #FCF463;   // Color of all buttons and volume/progress indicators
+$rhap_background-color: #2d2d2d; // Color of the player background
+$rhap_bar-color: #FCF463 !default;     // Color of volume and progress bar
+$rhap_time-color: #FCF463 !default;       // Font color of current time and duration
+@import '~react-h5-audio-player/src/styles.scss';
+
+.rhap_container {
+    width: 400px;
+    border-radius: 15px;
+}
+
 html, body {
     background-color: $black;
     height: 100%;
@@ -119,6 +131,7 @@ html, body {
 .img-mujer img {
     height: 450px;
     width: auto;
+    filter: sepia(0.5);
 }
 
 .scroll-to-links {
@@ -264,7 +277,7 @@ html, body {
 }
 
 .image-sepia img {
-    filter: sepia(1);
+    filter: sepia(0.8);
     max-height: 300px;
     width: auto;
 }
