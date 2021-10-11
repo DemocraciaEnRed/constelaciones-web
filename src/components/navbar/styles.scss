@@ -50,6 +50,9 @@
     height: 100vh;
     background: $black;
     width: 100vw;
+    @include touch {
+        left:55px;
+    }
 }
 
 .navbar-enter {

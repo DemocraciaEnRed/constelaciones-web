@@ -32,7 +32,8 @@ $rhap_time-color: #FCF463 !default;       // Font color of current time and dura
 @import '~react-h5-audio-player/src/styles.scss';
 
 .rhap_container {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     border-radius: 15px;
 }
 
