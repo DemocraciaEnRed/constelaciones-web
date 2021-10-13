@@ -12,7 +12,8 @@
     "start": "cross-env NODE_OPTIONS=\"-r esm\" gatsby develop",
     "build": "cross-env NODE_OPTIONS=\"-r esm\" gatsby build",
     "serve": "cross-env NODE_OPTIONS=\"-r esm\" gatsby serve",
-    "clean": "cross-env NODE_OPTIONS=\"-r esm\" gatsby clean"
+    "clean": "cross-env NODE_OPTIONS=\"-r esm\" gatsby clean",
+    "deploy": "cross-env NODE_OPTIONS=\"-r esm\" gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "axios": "^0.22.0",
@@ -33,6 +34,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "esm": "^3.2.25"
+    "esm": "^3.2.25",
+    "gh-pages": "^3.2.3"
   }
 }

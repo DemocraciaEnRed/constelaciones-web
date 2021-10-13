@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "constelaciones-web",
+    siteUrl: "https://constelaciones.co",
+    title: "Constelaciones",
   },
   plugins: [
     "gatsby-plugin-sass",
