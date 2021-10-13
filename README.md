@@ -13,7 +13,7 @@
 
 ### Para correr la aplicación:
 
-1. Asegurarnos de tener utilizar la versión correcta de Node. Requiere, como minimo, NodeJS 12.x 
+1. Asegurarnos de tener utilizar la versión correcta de Node. Requiere, como minimo, NodeJS 12.x (Tambien funciona con node 14.x)
 ```bash
 nvm use v12.22.3
 ```
@@ -43,9 +43,19 @@ npm run  serve
 ```
 Se disponibiliza el sitio en [http://localhost:9000/](http://localhost:9000/)
 
-
 En la carpeta `content` se encuentran los textos en formato .json de la landing para facilitar su edición.
 
+### Github Pages deploy
+
+Siempre corroborar que el build es correcto. Para eso hacer `npm run build` y puego `npm run serve` para testear.
+
+Cuando el build haya sido correcto, se hace el deploy en la branch `gh-pages` del contenido de la carpeta `/public`
+
+Simplemente hay que correr `npm run deploy` que hará el build y luego el deploy en la branch `gh-pages`
+
+La página es hosteada por Github Pages: [https://constelaciones.co](https://constelaciones.co)
+
+Mas informacion: [https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/)
 
 ---
 
