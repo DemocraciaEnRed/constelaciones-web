@@ -14,7 +14,7 @@ const Particle = ({ mujeres }) => {
                     return ( 
                       <React.Fragment key={title}>
                           <div className="dot" onClick={() => handleClick(link)}>
-                            <span className="text has-text-white">Conocé la historia de <span className="is-uppercase has-text-weight-bold">{title}</span></span>
+                            <span className="text has-text-white"><span className="is-uppercase has-text-weight-bold">{title}</span></span>
                           </div>
                       </React.Fragment>
                     )

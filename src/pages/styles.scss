@@ -95,7 +95,7 @@ html, body {
 }
 
 // mujeres
-.liderezas-img {
+.lideresas-img {
     display: inline-block;
     width: 200px;
     height: 200px;
@@ -108,6 +108,9 @@ html, body {
         margin: 0 auto;
         opacity: 1;
         cursor: pointer;
+        img {
+            filter: sepia(0.5);
+        }
     }
     
     .text {

@@ -13,7 +13,7 @@ if (typeof window !== "undefined") {
     new SmoothScroll('a[href*="#"]');
 }
 
-const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, palabras_clave, imagen, imagen_extra, audio } }) => {
+const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, palabras_clave, imagen, imagen_extra, audio, audio_extra } }) => {
     return (
       <main>
         <title>Mujeres - {title} </title>
@@ -33,18 +33,10 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
                     <div className="scroll-to-links py-6">
                         <a className="circle-link my-6" href="#recorrido">
                             <span>recorrido</span>
-                            <span aria-hidden={true} />
-                            <span aria-hidden={true}  />
-                            <span aria-hidden={true}  />
-                            <span aria-hidden={true}  />
                         </a>
                         {motivacion &&
                             <a className="circle-link my-6" href="#motivacion">
                                 <span>motivación</span>
-                                <span aria-hidden={true}  />
-                                <span aria-hidden={true}  />
-                                <span aria-hidden={true}  />
-                                <span aria-hidden={true}  />
                             </a>
                         }
                     </div>
@@ -91,12 +83,19 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
                             <AudioPlayer
                                 src={`/assets/mujeres/${audio}`}
                             />
+                            {audio_extra &&
+                                <div className="mt-4">
+                                    <AudioPlayer
+                                    src={`/assets/mujeres/${audio_extra}`}
+                                />
+                                </div>
+                            }
                         </div>
                     }
                     
                 </div>
                 <a className="circle-link circle-link-big my-6 mx-auto" href="/mujeres">
-                    <span>Seguí conociendo a las liderezas</span>
+                    <span>Seguí conociendo a las lideresas</span>
                     <span aria-hidden={true}  />
                     <span aria-hidden={true}  />
                     <span aria-hidden={true}  />

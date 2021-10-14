@@ -39,8 +39,8 @@ const Navbar = () => {
                 <a href='/mujeres' className='navbar-item'>
                 Mujeres
                 </a>
-                <a href='/' className='navbar-item'>
-                Quienes somos
+                <a href='/quienes-somos' className='navbar-item'>
+                Quiénes somos
                 </a>
                 <a href='/organizaciones' className='navbar-item'>
                 Organizaciones

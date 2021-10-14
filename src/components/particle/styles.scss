@@ -52,8 +52,8 @@ $dot-count: 10; //cantidad de mujeres con pagina individual
         @keyframes move-path-#{$i} {
             @for $step from 0 through $steps {
                 #{$step / $steps * 100%} {
-                transform: translateX(random(100) - 50vw)
-                    translateY(random(100) - 50vh)
+                transform: translateX(random(80) - 50vw)
+                    translateY(random(80) - 50vh)
                     scale(random(70) / 100 + 0.5);
                 }
             }

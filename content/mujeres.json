@@ -88,7 +88,8 @@
         ],
         "imagen": "Marbellys.jpeg",
         "imagen_extra": "Marbellys-extra.jpeg",
-        "audio": "Marbellys.ogg"
+        "audio": "Marbellys-p1.ogg",
+        "audio_extra": "Marbellys-p2.ogg"
     },
     {
         "title": "Menfis Cedeño Cordero",
@@ -100,7 +101,7 @@
             "NOSTALGIA", "ANHELO", "FORTALEZA"
         ],
         "imagen": "Menfis.JPG",
-        "imagen_extra": "",
+        "imagen_extra": "Menfis-extra.jpeg",
         "audio": "Menfis.ogg"
     },
     {
