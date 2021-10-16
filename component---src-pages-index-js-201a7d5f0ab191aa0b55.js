@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkconstelaciones_web=self.webpackChunkconstelaciones_web||[]).push([[678],{704:function(e,t,n){n.r(t);var l=n(294);t.default=function(){return l.createElement("main",null,l.createElement("title",null,"CONSTELACIONES DE INCIDENCIA"),l.createElement("h1",{class:"title"},"CONSTELACIONES",l.createElement("br",null),"DE INCIDENCIA"))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-201a7d5f0ab191aa0b55.js.map
