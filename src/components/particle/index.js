@@ -9,16 +9,18 @@ const Particle = ({ mujeres }) => {
     return (
         <div className="sky">
             {
-                 mujeres.map(({node: { title } }) => {
+                 mujeres.map(({node: { title, page } }) => {
+                   if (page) {
                     const link = `/mujer/${slugify(title)}`;
-                    return ( 
-                      <React.Fragment key={title}>
-                          <div className="dot" onClick={() => handleClick(link)}>
-                            <span className="text has-text-white"><span className="is-uppercase has-text-weight-bold">{title}</span></span>
-                          </div>
-                      </React.Fragment>
-                    )
-                  }
+                      return ( 
+                        <React.Fragment key={title}>
+                            <div className="dot" onClick={() => handleClick(link)}>
+                              <span className="text has-text-white"><span className="is-uppercase has-text-weight-bold">{title}</span></span>
+                            </div>
+                        </React.Fragment>
+                      )
+                    }
+                   }
                 )
             }
         </div>

@@ -6,13 +6,15 @@ async function mujeresPages({ graphql, actions }) {
     const mujerTemplate = path.resolve('./src/templates/mujer.js');
     const mujeres = await JSON.parse(await fs.promises.readFile('./content/mujeres.json'))    
     mujeres.forEach((mujer) => {
-        actions.createPage({
-            path: `mujer/${slugify(mujer.title)}`,
-            component: mujerTemplate,
-            context: {
-                ...mujer
-            },
-        });
+        if (mujer.page) {
+            actions.createPage({
+                path: `mujer/${slugify(mujer.title)}`,
+                component: mujerTemplate,
+                context: {
+                    ...mujer
+                },
+            }); 
+        }
     });
 }
 

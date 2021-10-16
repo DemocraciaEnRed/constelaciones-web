@@ -102,12 +102,12 @@ html, body {
     position: relative;
     figure {
         border-radius: 50%;
-        width: 200px;
-        height: 200px;
+        width: 160px;
+        height: 160px;
         overflow: hidden;
         margin: 0 auto;
         opacity: 1;
-        cursor: pointer;
+        cursor: default;
         img {
             filter: sepia(0.5);
         }
@@ -115,7 +115,7 @@ html, body {
     
     .text {
         display: none;
-        margin-top: 20px;
+        margin-top: 0px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -128,6 +128,17 @@ html, body {
         .text {
             display: block;
         }
+    }
+}
+
+a.lideresas-img {
+    figure {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    }
+    .text {
+        margin-top: 20px
     }
 }
 

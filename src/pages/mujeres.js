@@ -21,6 +21,16 @@ const Mujeres = () => {
         counter++;
         return classNameColumn;
     }
+    const getImage = (imagen, title, page) => {
+        return (
+            <>
+                <figure> 
+                    <img src={`/assets/mujeres/${imagen}`} alt={title}/>
+                </figure>
+                <span className="text has-text-white">{page && "Conocé la historia de"}<br /><span className="is-uppercase has-text-weight-bold">{title}</span></span>
+            </>
+        )
+    }
     return (
       <main>
         <title>Mujeres - CONSTELACIONES DE INCIDENCIA</title>
@@ -40,17 +50,20 @@ const Mujeres = () => {
                 <h3 className="title is-size-4 mb-6"><span className="has-text-primary">Clickea en las lideresas</span> para conocer toda su historia</h3>
                     <div className="columns is-multiline mt-6">
                         {
-                          mujeresData.map(({node: { imagen, title } }) => {
+                          mujeresData.map(({node: { imagen, title, page } }) => {
                             const classNameColumn = getClassName();
                                 return (
                                     <>
                                         <div className={`column ${classNameColumn}`}>
-                                            <a href={`/mujer/${slugify(title)}`} className="lideresas-img">
-                                                <figure> 
-                                                    <img src={`/assets/mujeres/${imagen}`} alt={title}/>
-                                                </figure>
-                                                <span className="text has-text-white">Conocé la historia de <br /><span className="is-uppercase has-text-weight-bold">{title}</span></span>
-                                            </a>
+                                            {page ?
+                                                <a href={`/mujer/${slugify(title)}`} className="lideresas-img">
+                                                    {getImage(imagen, title, page)}
+                                                </a>
+                                            :
+                                            <div className="lideresas-img">
+                                                    {getImage(imagen, title, page)}
+                                            </div>
+                                            }
                                         </div>
                                     </>
                                 )

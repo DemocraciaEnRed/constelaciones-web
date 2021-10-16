@@ -1,5 +1,15 @@
 [
     {
+        "title": "Génesis Andrea Quevedo Oviedo",
+        "imagen": "Genesis_Quevedo_Oviedo.JPG",
+        "page": false
+    },
+    {
+        "title": "Damay Medina Rodríguez",
+        "imagen": "Damay_Medina.JPG",
+        "page": false
+    },
+    {
         "title": "Dayana Mendoza",
         "origen": "La Victoria Estado. Aragua",
         "destino": "Bogotá",
@@ -10,7 +20,8 @@
         ],
         "imagen": "SS1.jpeg",
         "imagen_extra": "SS1-extra.jpeg",
-        "audio": "SS1.ogg"
+        "audio": "SS1.ogg",
+        "page": true
     },
     {
         "title": "Aliyoner Rodríguez",
@@ -23,7 +34,8 @@
         ],
         "imagen": "SS2.jpeg",
         "imagen_extra": "SS2-extra.jpeg",
-        "audio": "SS2.ogg"
+        "audio": "SS2.ogg",
+        "page": true
     },
     {
         "title": "Eloise Infante",
@@ -36,7 +48,18 @@
         ],
         "imagen": "SS12.jpeg",
         "imagen_extra": "SS12-extra.jpeg",
-        "audio": "Eloise.ogg"
+        "audio": "Eloise.ogg",
+        "page": true
+    },
+    {
+        "title": "Irene Margot Sánchez Castellanos",
+        "imagen": "Irene_Sanchez.JPG",
+        "page": false
+    },
+    {
+        "title": "Kelly Johanna Arévalo Rodríguez",
+        "imagen": "Kelly_Johanna_Arevalo.JPG",
+        "page": false
     },
     {
         "title": "Liliana Franco",
@@ -49,7 +72,8 @@
         ],
         "imagen": "SS13.jpeg",
         "imagen_extra": "SS13-extra.jpeg",
-        "audio": ""
+        "audio": "",
+        "page": true
     },
     {
         "title": "Emily Nava",
@@ -62,7 +86,8 @@
         ],
         "imagen": "SS14.jpeg",
         "imagen_extra": "",
-        "audio": ""
+        "audio": "",
+        "page": true
     },
     {
         "title": "Mayerling Cofre",
@@ -75,7 +100,18 @@
         ],
         "imagen": "Mayerling.jpeg",
         "imagen_extra": "Mayerling-extra.jpeg",
-        "audio": "Mayerling.ogg"
+        "audio": "Mayerling.ogg",
+        "page": true
+    },
+    {
+        "title": "Jenny Castillo Sibada",
+        "imagen": "Jenny_Castillo.JPG",
+        "page": false
+    },
+    {
+        "title": "María Fernanda Vargas",
+        "imagen": "Maria_Fernanda_Vargas.jpeg",
+        "page": false
     },
     {
         "title": "Marbellys Paredes",
@@ -89,7 +125,8 @@
         "imagen": "Marbellys.jpeg",
         "imagen_extra": "Marbellys-extra.jpeg",
         "audio": "Marbellys-p1.ogg",
-        "audio_extra": "Marbellys-p2.ogg"
+        "audio_extra": "Marbellys-p2.ogg",
+        "page": true
     },
     {
         "title": "Menfis Cedeño Cordero",
@@ -102,7 +139,8 @@
         ],
         "imagen": "Menfis.JPG",
         "imagen_extra": "Menfis-extra.jpeg",
-        "audio": "Menfis.ogg"
+        "audio": "Menfis.ogg",
+        "page": true
     },
     {
         "title": "Celianis Marluibes Pulido Moreno",
@@ -115,7 +153,18 @@
         ],
         "imagen": "Celianis.JPG",
         "imagen_extra": "",
-        "audio": ""
+        "audio": "",
+        "page": true
+    },
+    {
+        "title": "Durley Aguirre",
+        "imagen": "Durley_Aguirre.jpeg",
+        "page": false
+    },
+    {
+        "title": "Mercedes Ortiz",
+        "imagen": "Mercedes_Ortiz.jpeg",
+        "page": false
     },
     {
         "title": "Yerifer Eliana Maytin Serrano",
@@ -128,6 +177,97 @@
         ],
         "imagen": "Yerifer.JPG",
         "imagen_extra": "",
-        "audio": ""
+        "audio": "",
+        "page": true
+    },
+    {
+        "title": "Ángela Manrique",
+        "imagen": "SS6.jpeg",
+        "page": false
+    },
+    {
+        "title": "Esmeiler Murcia",
+        "imagen": "SS7.jpeg",
+        "page": false
+    },
+    {
+        "title": "Diana Medina",
+        "imagen": "SS8.jpeg",
+        "page": false
+    },
+    {
+        "title": "Carolina Pinilla",
+        "imagen": "SS9.jpeg",
+        "page": false
+    },
+    {
+        "title": "Paula Andrea Rodríguez",
+        "imagen": "SS15.jpeg",
+        "page": false
+    },
+    {
+        "title": "Gabriela Tirado",
+        "imagen": "SS16.jpeg",
+        "page": false
+    },
+    {
+        "title": "Liza Rubio",
+        "imagen": "Liza_Rubio.jpeg",
+        "page": false
+    },
+    {
+        "title": "Fairlady Correa Alzate",
+        "imagen": "Fairlady_Correa.jpeg",
+        "page": false
+    },
+    {
+        "title": "Jennifer Alexa Flores ",
+        "imagen": "Jennifer_Flores.jpeg",
+        "page": false
+    },
+    {
+        "title": "Adriana Carolina Medina Pacheco",
+        "imagen": "Adriana_Medina.JPG",
+        "page": false
+    },
+    {
+        "title": "Elcida Florez Centeno",
+        "imagen": "Elcida_Florez.JPG",
+        "page": false
+    },
+    {
+        "title": "Yuri Castro Guitiérrez",
+        "imagen": "Yuri_Castro_Gutierrez.JPG",
+        "page": false
+    },
+    {
+        "title": "Dalia Catalina Espinel Blanco",
+        "imagen": "Dalia_Catalina_Espinel_Blanco.JPG",
+        "page": false
+    },
+    {
+        "title": "Jessica Milena Márquez Núñez",
+        "imagen": "Jessica_Milena_Marquez.JPG",
+        "page": false
+    },
+    {
+        "title": "Teresa María Silvia González",
+        "imagen": "Teresa_Maria_Silvia_Gonzalez.JPG",
+        "page": false
+    },
+    {
+        "title": "Ana María Reyes Carvajal",
+        "imagen": "Ana_Maria_Reyes_Carvajal.JPG",
+        "page": false
+    },
+    {
+        "title": "Damarys Sánchez",
+        "imagen": "Damarys_Sanchez.JPG",
+        "page": false
+    },
+    {
+        "title": "Wilmary Paola Graterol",
+        "imagen": "Wilmary_Paola_Graterol.JPG",
+        "page": false
     }
 ]
