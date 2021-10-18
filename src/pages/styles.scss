@@ -31,6 +31,8 @@ $rhap_bar-color: #FCF463 !default;     // Color of volume and progress bar
 $rhap_time-color: #FCF463 !default;       // Font color of current time and duration
 @import '~react-h5-audio-player/src/styles.scss';
 
+@import '~react-image-lightbox/style.css';
+
 .rhap_container {
     max-width: 400px;
     width: 100%;
@@ -293,6 +295,10 @@ a.lideresas-img {
 
 .image-sepia img {
     filter: sepia(0.8);
+}
+
+.image.image-sepia img {
     max-height: 300px;
     width: auto;
+    cursor: pointer;
 }

@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useState } from "react"
 import slugify from 'slugify'
+import Lightbox from 'react-image-lightbox';
 import AudioPlayer from 'react-h5-audio-player';
 import "../pages/styles.scss"
 import Navbar from '../components/navbar'
@@ -14,6 +15,8 @@ if (typeof window !== "undefined") {
 }
 
 const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, palabras_clave, imagen, imagen_extra, audio, audio_extra } }) => {
+    const [ showLightbox, setShowLightbox ] = useState(false);
+
     return (
       <main>
         <title>Mujeres - {title} </title>
@@ -71,9 +74,16 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
                     {imagen_extra &&
                         <div className="my-6">
                             <h4 className="title has-text-primary is-size-5 has-text-weight-semibold">¿Qué te representa?</h4>
-                            <figure className="image image-sepia">
+                            <figure className="image image-sepia" onClick={() => setShowLightbox(true)} onKeyDown={() => setShowLightbox(true)}>
                                 <img src={`/assets/mujeres/${imagen_extra}`} />
                             </figure>
+                            {showLightbox &&
+                                <Lightbox
+                                    mainSrc={`/assets/mujeres/${imagen_extra}`}
+                                    onCloseRequest={() => setShowLightbox(false)}
+                                    wrapperClassName="image-sepia"
+                                />
+                            }
                         </div>
                     }
 
