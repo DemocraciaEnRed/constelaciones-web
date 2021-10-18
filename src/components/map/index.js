@@ -21,7 +21,7 @@ const Map = ({ data }) => {
             <ReactMapGL
                 {...viewport}
                 onViewportChange={setViewport}
-                mapboxApiAccessToken={process.env.SHEETS_API_KEY}
+                mapboxApiAccessToken={process.env.MAPBOX_TOKEN}
                 mapStyle="mapbox://styles/mapbox/dark-v9"
             >
                 {data && 
