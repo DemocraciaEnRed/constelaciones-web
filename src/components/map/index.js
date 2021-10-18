@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import ReactMapGL, { Popup } from 'react-map-gl';
+import mapboxgl from 'mapbox-gl';
 import Pins from './pins';
 import CityInfo from './city-info';
 import "./styles.scss"
@@ -44,5 +45,6 @@ const Map = ({ data }) => {
         
     );
 }
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 export default Map;
