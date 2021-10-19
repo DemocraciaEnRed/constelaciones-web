@@ -36,9 +36,8 @@ $dot-count: 10; //cantidad de mujeres con pagina individual
         border-radius: 50%;
         background-color: $dot-color;
         transform-origin: -1rem;
-        animation: lighting ease both infinite, auto-rotating ease both infinite;
-        //animation: lighting infinite;
-        animation-duration: 40000ms;
+        animation: lighting infinite;
+        animation-duration: 3000ms;
     }
     @for $i from 1 through $dot-count {
         &:nth-of-type(#{$i}) {
@@ -53,8 +52,7 @@ $dot-count: 10; //cantidad de mujeres con pagina individual
             @for $step from 0 through $steps {
                 #{$step / $steps * 100%} {
                 transform: translateX(random(80) - 50vw)
-                    translateY(random(80) - 50vh)
-                    scale(random(70) / 100 + 0.5);
+                    translateY(random(80) - 50vh);
                 }
             }
         }
@@ -62,16 +60,11 @@ $dot-count: 10; //cantidad de mujeres con pagina individual
 }
 
 @keyframes lighting {
-    0%, 100% {
+    0% {
         opacity: 0;
     }
-    5%, 80% {
+    80% {
         opacity: 1;
         box-shadow: 0 0 0.3rem 0.05rem $dot-color;
-    }
-}
-@keyframes auto-rotating {
-    to {
-        transform: rotate(360deg);
     }
 }
