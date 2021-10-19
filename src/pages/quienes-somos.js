@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react"
-import axios from 'axios'
+import React from "react"
 import "./styles.scss"
 import Navbar from '../components/navbar'
 import Breadcrumb from '../components/breadcrumb'
 import BreadcrumbItem from '../components/breadcrumb/item'
 import artemisas from "./assets/artemisas.png"
-import avina from "./assets/avina.png"
-import citi from "./assets/citi.png"
-import violeta from "./assets/hojas-violeta.png"
+import center_for_global_development from "./assets/center_for_global_development.png"
+import otraparte from "./assets/otraparte.png"
+import el_derecho_a_no_obedecer from "./assets/el_derecho_a_no_obedecer.png"
 
 const QuienesSomos = () => {
     return (
@@ -34,26 +33,27 @@ const QuienesSomos = () => {
                   <p className="has-text-white">Constelaciones es una apuesta para visibilizar los liderazgos de mujeres migrantes y organizaciones sociales que trabajan con migrantes. Esta iniciativa es realizada en el marco del proyecto Escuelita Tu Bandera es Mi Bandera, un proyecto colectivo realizado por Fundación Artemisas y el Derecho a No Obedecer, La Fundación Konrad Adenauer y el Centro para el Desarrollo Global (Center for Global Development) en donde fortalecimos las capacidades de participación e incidencia ciudadana, de lideresas de organizaciones migrantes y de las comunidades de acogida de Cali, Bogotá y Cúcuta.</p>
                   <h3 className="title has-text-primary is-size-5 mt-6">¿Por qué nos importan las lideresas?</h3>
                   <p className="has-text-white">Estas mujeres migrantes son una representación de la resiliencia y la motivación por garantizar los derechos de los y las migrantes. Conoce sus historias aquí</p>
-                  <div className="mt-6 pt-6 has-text-centered">
+                  <div className="mt-6 pt-6 has-text-centered is-flex-desktop is-align-items-center	is-justify-content-center">
                     <img
                           src={artemisas}
                           alt='Artemisas'
                           width='140'
                       />
                       <img
-                          src={avina}
-                          alt='avina'
-                          width='140'
+                          src={el_derecho_a_no_obedecer}
+                          alt='El derecho a no obedecer'
+                          width='240'
                       />
                       <img
-                          src={citi}
-                          alt='citi'
+                          src={center_for_global_development}
+                          alt='Center for global development'
                           width='140'
+                          className='mr-6'
                       />
                       <img
-                          src={violeta}
-                          alt='violeta'
-                          width='140'
+                          src={otraparte}
+                          alt='otraparte'
+                          width='160'
                       />
                     </div>
                 </div>
