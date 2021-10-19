@@ -8,8 +8,9 @@ import "./styles.scss"
 
 const Map = ({ data }) => {
     const [viewport, setViewport] = useState({
-        longitude: -100,
-        zoom: 3.5,
+        longitude: -75,
+        latitud: 20,
+        zoom: 5,
         bearing: 0,
         pitch: 0,
         width: 'fit',
