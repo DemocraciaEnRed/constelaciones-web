@@ -39,7 +39,7 @@ $dot-count: 10; //cantidad de mujeres con pagina individual
     @for $i from 1 through $dot-count {
         &:nth-child(#{$i}) {
             top: percentage(random(80) / 100);
-            left: percentage(random(80) / 100);
+            left: percentage((random(80) + 15) / 100);
         }
        
     }
