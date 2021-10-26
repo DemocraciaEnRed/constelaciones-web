@@ -105,7 +105,7 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
                     
                 </div>
                 <a className="circle-link circle-link-big my-6 mx-auto" href="/mujeres">
-                    <span>Seguí conociendo a las lideresas</span>
+                    <span>Sigue conociendo a las lideresas</span>
                     <span aria-hidden={true}  />
                     <span aria-hidden={true}  />
                     <span aria-hidden={true}  />
