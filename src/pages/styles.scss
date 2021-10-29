@@ -78,6 +78,8 @@ html, body {
         position: absolute;
         left: 20px;
         top: 400px;
+        max-width: 200px;
+        word-break: normal;
         &.organizaciones {
             top: 450px;
             left: 45px;

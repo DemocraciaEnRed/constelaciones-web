@@ -28,7 +28,7 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
                     <BreadcrumbItem text="Mujeres" url="/mujeres" />
                     <BreadcrumbItem text={title} url={`/mujer/${slugify(title)}`} isActive />
                 </Breadcrumb>
-                <h2 className="title vertical-title-desktop is-family-secondary is-size-1-desktop has-text-primary is-uppercase">Dayana<br />Mendoza</h2>
+                <h2 className="title vertical-title-desktop is-family-secondary is-size-1-desktop has-text-primary is-uppercase">{title}</h2>
                 <div className="container is-flex is-justify-content-space-between py-6-desktop ml-6-desktop pl-6-desktop mujer-container">
                     <figure className="image img-mujer ml-6-desktop">
                         <img src={`/assets/mujeres/${imagen}`} />
