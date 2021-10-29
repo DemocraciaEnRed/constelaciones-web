@@ -112,6 +112,9 @@ html, body {
         margin: 0 auto;
         opacity: 1;
         cursor: default;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         img {
             filter: sepia(0.5);
         }
