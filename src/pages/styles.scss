@@ -54,6 +54,10 @@ html, body {
     margin-left: 80px;
 }
 
+.proximamente .title {
+    z-index:1;
+}
+
 @include touch {
     .main-logo {
         display: flex;
