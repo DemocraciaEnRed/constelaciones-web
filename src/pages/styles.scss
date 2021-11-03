@@ -58,6 +58,12 @@ html, body {
     z-index:1;
 }
 
+p{
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+}
+
 @include touch {
     .main-logo {
         display: flex;
