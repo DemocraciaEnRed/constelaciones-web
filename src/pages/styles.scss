@@ -54,8 +54,17 @@ html, body {
     margin-left: 80px;
 }
 
-.proximamente .title {
-    z-index:1;
+.proximamente {
+    background-repeat: no-repeat;
+    background-size: cover;
+    .title {
+        z-index:1;
+    }
+}
+
+.bg-estrellas {
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 p{

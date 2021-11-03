@@ -1,20 +1,12 @@
-import React, { useEffect, useState } from "react"
-import logo from "./assets/logo-constelaciones.svg"
+import React from "react"
 import "./styles.scss"
-import Constelaciones from '../components/constelaciones';
+import bgestrellas from "./assets/bg-estrellas.gif"
 
 const IndexPage = () => {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setLoading(false);
-  }, [])
   return (
     <main>
       <title>CONSTELACIONES DE INCIDENCIA</title>
-      {!loading &&
-        <Constelaciones />
-      }
-      <section className="hero is-fullheight proximamente">
+      <section className="hero is-fullheight proximamente" style={{backgroundImage: `url(${bgestrellas})`}}>
         <div className="hero-body is-justify-content-center main-logo">
           <h1 className="title is-2">Próximamente</h1>
         </div>

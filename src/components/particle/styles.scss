@@ -1,6 +1,5 @@
 @import "~bulma/sass/utilities/_all.sass";
 
-$dot-color: #FCF463;
 $dot-count: 10; //cantidad de mujeres con pagina individual
   
 // dots
@@ -15,26 +14,16 @@ $dot-count: 10; //cantidad de mujeres con pagina individual
     position: absolute;
     width: 35px;
     height: 35px;
+    animation: lighting 10s infinite;
     .text {
         display: none;
-        width:150px;
-        font-size: 25px;
+        max-width: 200px;
+        font-size: 22px;
     }
     &:hover {
         .text {
             display: block;
         }
-    }
-    &:before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background-color: $dot-color;
-        transform-origin: -1rem;
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-        animation: lighting 10s infinite;
     }
     @for $i from 1 through $dot-count {
         &:nth-child(#{$i}) {
@@ -52,7 +41,6 @@ $dot-count: 10; //cantidad de mujeres con pagina individual
     }
     80% {
         opacity: 1;
-        box-shadow: 0 0 0.3rem 0.05rem $dot-color;
     }
     100% {
         opacity: 0;

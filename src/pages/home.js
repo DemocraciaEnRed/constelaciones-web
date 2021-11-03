@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react"
 import logo from "./assets/logo-constelaciones.svg"
+import bgestrellas from "./assets/bg-estrellas.gif"
 import "./styles.scss"
 import Navbar from '../components/navbar'
 import { CSSTransition } from 'react-transition-group';
 import { useMujeresData } from '../hooks/useMujeresData'
-import Constelaciones from '../components/constelaciones';
 import Particle from '../components/particle';
 
 const IndexPage = () => {
@@ -55,9 +55,10 @@ const IndexPage = () => {
           unmountOnExit
         >
           <>
-          <Navbar />
-          <Constelaciones />
-          <Particle mujeres={mujeresData} />
+          <section className="hero is-fullheight bg-estrellas" style={{backgroundImage: `url(${bgestrellas})`}}>
+            <Navbar />
+            <Particle mujeres={mujeresData} />
+          </section>
           </>
         </CSSTransition>
         {intro && 
