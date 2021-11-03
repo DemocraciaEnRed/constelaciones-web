@@ -21,7 +21,7 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
       <main>
         <title>Mujeres - {title} </title>
           <Navbar />
-          <section className="main-container py-6 hero is-fullheight">
+          <section className="main-container bg-mujer py-6 hero is-fullheight">
             <div className="container is-fluid">
                 <Breadcrumb>
                     <BreadcrumbItem text="Home" url="/" />
