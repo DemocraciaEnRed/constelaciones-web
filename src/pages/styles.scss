@@ -124,6 +124,7 @@ p{
     height: 200px;
     position: relative;
     figure {
+        transition: transform .2s;
         border-radius: 50%;
         width: 160px;
         height: 160px;
@@ -143,14 +144,10 @@ p{
         display: none;
         margin-top: 0px;
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
         width: 100%;
+        z-index:1;
     }
     &:hover {
-        figure {
-            opacity: 0.7;
-        }
         .text {
             display: block;
         }
@@ -159,15 +156,41 @@ p{
 
 a.lideresas-img {
     figure {
-    cursor: pointer;
-    width: 200px;
-    height: 200px;
+        cursor: pointer;
+        width: 200px;
+        height: 200px;
     }
     .text {
         margin-top: 20px
     }
+    &:hover {
+        figure {
+            transform: scale(1.2);
+        }
+    }
 }
 
+.mujeres-scrolled {
+    max-height: 600px;
+    overflow: scroll;
+    margin-bottom: 60px;
+    .is-full {
+        .lideresas-img {
+            figure {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+    .is-half {
+        .lideresas-img {
+            figure {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+}
 // mujer
 .img-mujer img {
     height: 450px;
