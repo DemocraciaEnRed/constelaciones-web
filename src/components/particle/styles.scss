@@ -12,9 +12,11 @@ $dot-count: 10; //cantidad de mujeres con pagina individual
 .dot {
     cursor: pointer;
     position: absolute;
-    width: 35px;
-    height: 35px;
-    animation: lighting 10s infinite;
+    width: 60px;
+    height: 60px;
+    svg {
+        transform: scale(2.7);
+    }
     .text {
         display: none;
         max-width: 200px;
@@ -24,13 +26,25 @@ $dot-count: 10; //cantidad de mujeres con pagina individual
         .text {
             display: block;
         }
+        svg path{
+            fill: #FCF463;
+        }
     }
     @for $i from 1 through $dot-count {
         &:nth-child(#{$i}) {
             top: percentage(random(80) / 100);
-            left: percentage((random(80) + 15) / 100);
+            left: percentage((random(80) + 30) / 100);
         }
        
+    }
+
+    &:nth-child(odd) {
+        animation: lighting 10s infinite;
+    }
+
+    &:nth-child(even) {
+        animation: lighting 8s infinite;
+        animation-delay: 5s;
     }
 }
 
