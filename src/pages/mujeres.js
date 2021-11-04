@@ -55,7 +55,7 @@ const Mujeres = () => {
                     <BreadcrumbItem text="Home" url="/" />
                     <BreadcrumbItem text="Mujeres" url="/mujeres" isActive />
                 </Breadcrumb>
-                <h2 className="title vertical-title-desktop is-family-secondary is-size-1-desktop has-text-primary is-uppercase">Lideresas</h2>
+                <h2 className="title vertical-title-desktop   is-size-1-desktop has-text-primary is-uppercase">Lideresas</h2>
                 <div className="container has-text-left py-6-desktop ml-6-desktop pl-6-desktop">
                     <div className="columns">
                         <div className="column">

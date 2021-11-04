@@ -19,7 +19,7 @@ const QuienesSomos = () => {
                     <BreadcrumbItem text="Home" url="/" />
                     <BreadcrumbItem text="Quiénes Somos" url="/quienes-somos" isActive />
                 </Breadcrumb>
-                <h2 className="title vertical-title-desktop organizaciones is-family-secondary is-size-2-desktop has-text-primary is-uppercase">Quiénes Somos</h2>
+                <h2 className="title vertical-title-desktop organizaciones   is-size-2-desktop has-text-primary is-uppercase">Quiénes Somos</h2>
                 <div className="container has-text-left py-6-desktop ml-6-desktop pl-6-desktop">
                   <h3 className="title has-text-primary is-size-5">Artemisas</h3>
                   <p className="has-text-white">La Fundación Artemisas es una organización colombiana que surge en 2017 con la ejecución de un proyecto productivo llevado a cabo en el centro residencial Plaza de la Hoja de Bogotá D.C.; con esta iniciativa logramos trabajar con mujeres víctimas del conflicto armado propendiendo por su autonomía económica. En 2020 nos reactivamos bajo el contexto de la pandemia por COVID-19 entendiendo la necesidad de articularnos como ciudadanía y sociedad civil para hacerle frente a la peor crisis social y económica de la historia reciente. Nos conectamos con organizaciones del ecosistema cívico para articular procesos de incidencia política, apostarle a la formación en género y feminismos y fortalecer los sistemas democráticos de la región latinoamericana.</p>

@@ -79,7 +79,7 @@ const Organizaciones = () => {
                     <BreadcrumbItem text="Home" url="/" />
                     <BreadcrumbItem text="Organizaciones" url="/organizaciones" isActive />
                 </Breadcrumb>
-                <h2 className="title vertical-title-desktop organizaciones is-family-secondary is-size-2-desktop has-text-primary is-uppercase">Organizaciones</h2>
+                <h2 className="title vertical-title-desktop organizaciones   is-size-2-desktop has-text-primary is-uppercase">Organizaciones</h2>
                 <div className="container has-text-left py-6-desktop ml-6-desktop pl-6-desktop">
                   {dataLoaded && 
                     <>

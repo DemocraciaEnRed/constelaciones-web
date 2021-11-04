@@ -23,7 +23,7 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
           <Navbar />
           <section className="main-container bg-mujer py-6 hero is-fullheight">
             <div className="container is-fluid">
-                <h2 className="title vertical-title-desktop is-family-secondary is-size-1-desktop has-text-primary is-uppercase">{title}</h2>
+                <h2 className="title vertical-title-desktop   is-size-1-desktop has-text-primary is-uppercase">{title}</h2>
                 <div className="container columns py-6-desktop ml-6-desktop pl-6-desktop mujer-container">
                     <figure className="column is-half image img-mujer ml-6-desktop">
                         <img src={`/assets/mujeres/${imagen}`} />
@@ -87,7 +87,7 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
                     </div>
                 :''}
                 <div className="container pl-0 ml-0 pb-6">
-                    <h3 className="title has-text-primary is-size-4 is-family-secondary">{title}</h3>
+                    <h3 className="title has-text-primary is-size-4  ">{title}</h3>
                     <div id="recorrido">
                         <h4 className="title has-text-primary is-size-5 has-text-weight-semibold">Su camino recorrido</h4>
                         <div className="columns">
