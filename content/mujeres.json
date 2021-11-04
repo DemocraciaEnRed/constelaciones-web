@@ -20,7 +20,7 @@
         ],
         "imagen": "SS1.png",
         "imagen_extra": "SS1-extra.jpeg",
-        "audio": "SS1.ogg",
+        "audio": "Dayana.mp3",
         "page": true,
         "ilustraciones":[ 
             {"src":"IMG_1187.png","alt":"Rosarios"},
@@ -38,7 +38,7 @@
         ],
         "imagen": "SS2.png",
         "imagen_extra": "SS2-extra.jpeg",
-        "audio": "SS2.ogg",
+        "audio": "Aliyoner.mp3",
         "page": true,
         "ilustraciones":[
             {"src":"IMG_1179.PNG","alt":"Medicamentos antirretrovirales"},
@@ -58,7 +58,7 @@
         ],
         "imagen": "SS12.png",
         "imagen_extra": "SS12-extra.jpeg",
-        "audio": "Eloise.ogg",
+        "audio": "Eloise.mp3",
         "page": true,
         "ilustraciones":[
             {"src":"IMG_1192.png","alt":"Frontera"},
@@ -87,7 +87,7 @@
         ],
         "imagen": "SS13.png",
         "imagen_extra": "SS13-extra.jpeg",
-        "audio": "",
+        "audio": "Liliana.mp3",
         "page": true,
         "ilustraciones":[
             {"src":"IMG_1187.png","alt":"Rosarios"},
@@ -125,7 +125,7 @@
         ],
         "imagen": "Mayerling.png",
         "imagen_extra": "Mayerling-extra.jpeg",
-        "audio": "Mayerling.ogg",
+        "audio": "Mayerling.mp3",
         "page": true,
         "ilustraciones":[
             {"src":"IMG_1182.png","alt":"Poco dinero"},
@@ -154,8 +154,8 @@
         ],
         "imagen": "Marbellys.png",
         "imagen_extra": "Marbellys-extra.jpeg",
-        "audio": "Marbellys-p1.ogg",
-        "audio_extra": "Marbellys-p2.ogg",
+        "audio": "Marbellys-p1.mp3",
+        "audio_extra": "Marbellys-p2.mp3",
         "page": true,
         "ilustraciones":[
             {"src":"IMG_1194.png","alt":"Caminatas"},
@@ -174,7 +174,7 @@
         ],
         "imagen": "Menfis.png",
         "imagen_extra": "Menfis-extra.jpeg",
-        "audio": "Menfis.ogg",
+        "audio": "Menfis.mp3",
         "page": true,
         "ilustraciones":[
             {"src":"IMG_1184.png","alt":"Amuletos"},
