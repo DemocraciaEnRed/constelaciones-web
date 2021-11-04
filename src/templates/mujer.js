@@ -23,11 +23,6 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
           <Navbar />
           <section className="main-container bg-mujer py-6 hero is-fullheight">
             <div className="container is-fluid">
-                <Breadcrumb>
-                    <BreadcrumbItem text="Home" url="/" />
-                    <BreadcrumbItem text="Mujeres" url="/mujeres" />
-                    <BreadcrumbItem text={title} url={`/mujer/${slugify(title)}`} isActive />
-                </Breadcrumb>
                 <h2 className="title vertical-title-desktop is-family-secondary is-size-1-desktop has-text-primary is-uppercase">{title}</h2>
                 <div className="container columns py-6-desktop ml-6-desktop pl-6-desktop mujer-container">
                     <figure className="column is-half image img-mujer ml-6-desktop">
