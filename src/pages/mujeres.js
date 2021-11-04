@@ -2,8 +2,6 @@ import React from "react"
 import slugify from 'slugify'
 import "./styles.scss"
 import Navbar from '../components/navbar'
-import Breadcrumb from '../components/breadcrumb'
-import BreadcrumbItem from '../components/breadcrumb/item'
 import { useMujeresData } from '../hooks/useMujeresData'
 
 const Mujeres = () => {
@@ -51,10 +49,6 @@ const Mujeres = () => {
           <Navbar />
           <section className="main-container py-6 hero is-fullheight bg-mujer">
             <div className="container is-fluid">
-                <Breadcrumb>
-                    <BreadcrumbItem text="Home" url="/" />
-                    <BreadcrumbItem text="Mujeres" url="/mujeres" isActive />
-                </Breadcrumb>
                 <h2 className="title vertical-title-desktop   is-size-1-desktop has-text-primary is-uppercase">Lideresas</h2>
                 <div className="container has-text-left py-6-desktop ml-6-desktop pl-6-desktop">
                     <div className="columns">
@@ -89,20 +83,14 @@ const Mujeres = () => {
                 <h3 className="title is-size-2-tablet is-size-4-mobile mb-6 pb-6 has-text-primary">Este ejercicio fue realizado en el marco de la escuela de formación Tu Bandera es Mi Bandera y estas son las mujeres que hicieron parte del proceso en Cali, Bogotá y Cúcuta</h3>
                     <div className="columns is-multiline mt-6">
                         {
-                          mujeresData.map(({node: { imagen, title, page } }) => {
+                          [...mujeresData].reverse().map(({node: { imagen, title } }) => {
                             const classNameColumn = getClassName();
                                 return (
                                     <>
                                         <div className={`column ${classNameColumn}`}>
-                                            {page ?
-                                                <a href={`/mujer/${slugify(title)}`} className="lideresas-img">
-                                                    {getImage(imagen, title, page)}
-                                                </a>
-                                            :
                                             <div className="lideresas-img">
-                                                    {getImage(imagen, title, page)}
+                                                {getImage(imagen, title, false)}
                                             </div>
-                                            }
                                         </div>
                                     </>
                                 )

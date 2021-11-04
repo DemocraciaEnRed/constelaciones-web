@@ -1,11 +1,8 @@
 import React, { useState } from "react"
-import slugify from 'slugify'
 import Lightbox from 'react-image-lightbox';
 import AudioPlayer from 'react-h5-audio-player';
 import "../pages/styles.scss"
 import Navbar from '../components/navbar'
-import Breadcrumb from '../components/breadcrumb'
-import BreadcrumbItem from '../components/breadcrumb/item'
 import pointer from '../pages/assets/pointer.svg'
 
 //Sets smooth scroll animation for anchor links
