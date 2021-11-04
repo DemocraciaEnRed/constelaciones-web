@@ -88,9 +88,10 @@ const IndexPage = () => {
           }
           { slide === 2 &&
             <div className="hero-body is-justify-content-center">
-            <h3 className="title has-text-centered px-6 mx-6 title-intro">
+            {/* <h3 className="title has-text-centered px-6 mx-6 title-intro">
             Esta iniciativa es realizada en el marco del proyecto Escuelita Tu Bandera es Mi Bandera, un proyecto colectivo realizado por Fundación Artemisas y el Derecho a No Obedecer, La Fundación Konrad Adenauer y el Centro para el Desarrollo Global (Center for Global Development) en donde fortalecimos las capacidades de participación e incidencia ciudadana, de lideresas de organizaciones migrantes y de las comunidades de acogida de Cali, Bogotá y Cúcuta.
-            </h3>
+            </h3> */}
+            <h3 className="title has-text-centered px-6 mx-6 title-intro">Haz click en las estrellas para conocer historias de lideresas</h3>
           </div>
           }
           <button className="button skip-intro is-primary" onClick={skipIntro}>Saltar intro</button>
