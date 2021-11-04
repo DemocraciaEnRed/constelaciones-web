@@ -18,10 +18,14 @@
         "palabras_clave": [
             "MIGRAR", "DOLOR", "REENCUENTRO"
         ],
-        "imagen": "SS1.jpeg",
+        "imagen": "SS1.png",
         "imagen_extra": "SS1-extra.jpeg",
         "audio": "SS1.ogg",
-        "page": true
+        "page": true,
+        "ilustraciones":[ 
+            {"src":"IMG_1187.png","alt":"Rosarios"},
+            {"src":"IMG_1193.png","alt":"Pasaporte"},
+            {"src":"IMG_1195.png","alt":"Parejas esposos"}]
     },
     {
         "title": "Aliyoner Rodríguez",
@@ -32,10 +36,16 @@
         "palabras_clave": [
             "LLORAR", "RABIA", "VALENTIA"
         ],
-        "imagen": "SS2.jpeg",
+        "imagen": "SS2.png",
         "imagen_extra": "SS2-extra.jpeg",
         "audio": "SS2.ogg",
-        "page": true
+        "page": true,
+        "ilustraciones":[
+            {"src":"IMG_1179.PNG","alt":"Medicamentos antirretrovirales"},
+            {"src":"IMG_1192.PNG","alt":"Frontera"},
+            {"src":"IMG_1181.PNG","alt":"Hijes"}
+        ],
+        "video":"https://www.youtube.com/embed/LMbr5wjO9Xc"
     },
     {
         "title": "Eloise Infante",
@@ -46,10 +56,15 @@
         "palabras_clave": [
             "SALIR", "FELIZ", "MOTIVAR"
         ],
-        "imagen": "SS12.jpeg",
+        "imagen": "SS12.png",
         "imagen_extra": "SS12-extra.jpeg",
         "audio": "Eloise.ogg",
-        "page": true
+        "page": true,
+        "ilustraciones":[
+            {"src":"IMG_1192.png","alt":"Frontera"},
+            {"src":"IMG_1193.png","alt":"Pasaporte"},
+            {"src":"IMG_1185.png","alt":"Diplomas universitarios"}
+        ]
     },
     {
         "title": "Irene Margot Sánchez Castellanos",
@@ -70,10 +85,15 @@
         "palabras_clave": [
             "HUYENDO", "SUPERACION", "ORGULLO"
         ],
-        "imagen": "SS13.jpeg",
+        "imagen": "SS13.png",
         "imagen_extra": "SS13-extra.jpeg",
         "audio": "",
-        "page": true
+        "page": true,
+        "ilustraciones":[
+            {"src":"IMG_1187.png","alt":"Rosarios"},
+            {"src":"IMG_1181.png","alt":"Hijes"},
+            {"src":"IMG_1191.png","alt":"Carro"}
+        ]
     },
     {
         "title": "Emily Nava",
@@ -84,10 +104,15 @@
         "palabras_clave": [
             "DOLOR", "TRISTEZA", "FORTALEZA"
         ],
-        "imagen": "SS14.jpeg",
+        "imagen": "SS14.png",
         "imagen_extra": "",
         "audio": "",
-        "page": true
+        "page": true,
+        "ilustraciones":[
+            {"src":"IMG_1192.png","alt":"Frontera"},
+            {"src":"IMG_1177.png","alt":"Familia"},
+            {"src":"IMG_1189.png","alt":"Buses"}
+        ]
     },
     {
         "title": "Mayerling Cofre",
@@ -98,10 +123,15 @@
         "palabras_clave": [
             "FRAGILIDAD", "ESPERA", "APRENDER"
         ],
-        "imagen": "Mayerling.jpeg",
+        "imagen": "Mayerling.png",
         "imagen_extra": "Mayerling-extra.jpeg",
         "audio": "Mayerling.ogg",
-        "page": true
+        "page": true,
+        "ilustraciones":[
+            {"src":"IMG_1182.png","alt":"Poco dinero"},
+            {"src":"IMG_1177.png","alt":"Familia"},
+            {"src":"IMG_1189.png","alt":"Buses"}
+        ]
     },
     {
         "title": "Jenny Castillo Sibada",
@@ -122,11 +152,16 @@
         "palabras_clave": [
             "ANGUSTIA", "NOSTALGIA", "INSEGURIDAD"
         ],
-        "imagen": "Marbellys.jpeg",
+        "imagen": "Marbellys.png",
         "imagen_extra": "Marbellys-extra.jpeg",
         "audio": "Marbellys-p1.ogg",
         "audio_extra": "Marbellys-p2.ogg",
-        "page": true
+        "page": true,
+        "ilustraciones":[
+            {"src":"IMG_1194.png","alt":"Caminatas"},
+            {"src":"IMG_1189.png","alt":"Buses"},
+            {"src":"IMG_1177.png","alt":"Familia"}
+        ]
     },
     {
         "title": "Menfis Cedeño Cordero",
@@ -137,10 +172,15 @@
         "palabras_clave": [
             "NOSTALGIA", "ANHELO", "FORTALEZA"
         ],
-        "imagen": "Menfis.JPG",
+        "imagen": "Menfis.png",
         "imagen_extra": "Menfis-extra.jpeg",
         "audio": "Menfis.ogg",
-        "page": true
+        "page": true,
+        "ilustraciones":[
+            {"src":"IMG_1184.png","alt":"Amuletos"},
+            {"src":"IMG_1189.png","alt":"Buses"},
+            {"src":"IMG_1183.png","alt":"Peluches"}
+        ]
     },
     {
         "title": "Celianis Marluibes Pulido Moreno",
@@ -154,7 +194,12 @@
         "imagen": "Celianis.JPG",
         "imagen_extra": "",
         "audio": "",
-        "page": true
+        "page": true,
+        "ilustraciones":[
+            {"src":"IMG_1188.png","alt":"Pasajes"},
+            {"src":"IMG_1192.png","alt":"Frontera"},
+            {"src":"IMG_1189.png","alt":"Buses"}
+        ]
     },
     {
         "title": "Durley Aguirre",
@@ -175,10 +220,15 @@
         "palabras_clave": [
             "FRUSTRACION", "CONFIANZA", "CANSANCIO"
         ],
-        "imagen": "Yerifer.JPG",
+        "imagen": "Yerifer.png",
         "imagen_extra": "",
         "audio": "",
-        "page": true
+        "page": true,
+        "ilustraciones":[
+            {"src":"IMG_1187.png","alt":"Rosarios"},
+            {"src":"IMG_1181.png","alt":"Hijes"},
+            {"src":"IMG_1194.png","alt":"Caminatas"}
+        ]
     },
     {
         "title": "Ángela Manrique",

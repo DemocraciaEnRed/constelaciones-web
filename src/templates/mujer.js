@@ -14,7 +14,7 @@ if (typeof window !== "undefined") {
     new SmoothScroll('a[href*="#"]');
 }
 
-const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, palabras_clave, imagen, imagen_extra, audio, audio_extra } }) => {
+const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, palabras_clave, imagen, imagen_extra, audio, audio_extra,ilustraciones,video } }) => {
     const [ showLightbox, setShowLightbox ] = useState(false);
 
     return (
@@ -29,11 +29,38 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
                     <BreadcrumbItem text={title} url={`/mujer/${slugify(title)}`} isActive />
                 </Breadcrumb>
                 <h2 className="title vertical-title-desktop is-family-secondary is-size-1-desktop has-text-primary is-uppercase">{title}</h2>
-                <div className="container is-flex is-justify-content-space-between py-6-desktop ml-6-desktop pl-6-desktop mujer-container">
-                    <figure className="image img-mujer ml-6-desktop">
+                <div className="container columns py-6-desktop ml-6-desktop pl-6-desktop mujer-container">
+                    <figure className="column is-half image img-mujer ml-6-desktop">
                         <img src={`/assets/mujeres/${imagen}`} />
                     </figure>
-                    <div className="scroll-to-links py-6">
+                    <div className="column">
+                        <div className="info-timeline mb-6">
+                            <div className="pointer-map has-text-white mb-0 pb-0"><img src={pointer} className="pr-2"/><span>{origen}</span></div>
+                            <ul>
+                                <li><span className="text">{palabras_clave[0]}</span><span className="timeline-circle"></span></li>
+                                <li><span className="text">{palabras_clave[1]}</span><span className="timeline-circle"></span></li>
+                                <li><span className="text">{palabras_clave[2]}</span><span className="timeline-circle last"></span></li>
+                            </ul>
+                            <div className="pointer-map has-text-white mt-3"><img src={pointer} className="pr-2" /><span>{destino}</span></div>
+                        </div>
+                        {audio &&
+                            <div className="my-6">
+                                <h4 className="title has-text-primary is-size-5 has-text-weight-semibold">Escuchando a {title}</h4>
+                                <AudioPlayer
+                                    src={`/assets/mujeres/${audio}`}
+                                />
+                                {audio_extra &&
+                                    <div className="mt-4">
+                                        <AudioPlayer
+                                        src={`/assets/mujeres/${audio_extra}`}
+                                    />
+                                    </div>
+                                }
+                            </div>
+                        }
+                    </div>
+                    
+                    {/* <div className="scroll-to-links py-6">
                         <a className="circle-link my-6" href="#recorrido">
                             <span>recorrido</span>
                         </a>
@@ -42,8 +69,28 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
                                 <span>motivación</span>
                             </a>
                         }
+                    </div> */}
+                    
+                    
+                </div> 
+                {ilustraciones?
+                    <div className="pb-6 is-flex is-justify-content-space-evenly is-flex-wrap-wrap">
+                        {ilustraciones.map(ilustracion=>
+                            <figure class="m-3 image img-ilustracion">
+                                <img src={`/assets/ilustraciones/${ilustracion.src}`} alt={`Image de ${ilustracion.alt}`}/>
+                            </figure>
+                        )}
+                        <figure class="m-3 image img-ilustracion">
+                            <img src="/assets/ilustraciones/IMG_1200.png"/>
+                        </figure> 
+                      </div>
+                    :
+                ''}
+                {video? 
+                    <div className="mb-6 is-flex is-justify-content-center">
+                        <iframe width="560" height="315" src={video}title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                </div>
+                :''}
                 <div className="container pl-0 ml-0 pb-6">
                     <h3 className="title has-text-primary is-size-4 is-family-secondary">{title}</h3>
                     <div id="recorrido">
@@ -87,29 +134,11 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
                         </div>
                     }
 
-                    {audio &&
-                        <div className="my-6">
-                            <h4 className="title has-text-primary is-size-5 has-text-weight-semibold">Escuchando a {title}</h4>
-                            <AudioPlayer
-                                src={`/assets/mujeres/${audio}`}
-                            />
-                            {audio_extra &&
-                                <div className="mt-4">
-                                    <AudioPlayer
-                                    src={`/assets/mujeres/${audio_extra}`}
-                                />
-                                </div>
-                            }
-                        </div>
-                    }
+                    
                     
                 </div>
                 <a className="circle-link circle-link-big my-6 mx-auto" href="/mujeres">
                     <span>Sigue conociendo a las lideresas</span>
-                    <span aria-hidden={true}  />
-                    <span aria-hidden={true}  />
-                    <span aria-hidden={true}  />
-                    <span aria-hidden={true}  />
                 </a>
                 
             </div>
