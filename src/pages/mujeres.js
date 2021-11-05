@@ -82,7 +82,7 @@ const Mujeres = () => {
                     </div>
                 </div>
                 <div className="container has-text-centered">
-                <h3 className="title is-size-2-tablet is-size-4-mobile mb-6 pb-6 has-text-primary">Este ejercicio fue realizado en el marco de la escuela de formación Tu Bandera es Mi Bandera y estas son las mujeres que hicieron parte del proceso en Cali, Bogotá y Cúcuta</h3>
+                <h3 className="title is-size-3-tablet is-size-4-mobile mb-6 pb-6 has-text-primary">Este ejercicio fue realizado en el marco de la escuela de formación Tu Bandera es Mi Bandera y estas son las mujeres que hicieron parte del proceso en Cali, Bogotá y Cúcuta</h3>
                     <div className="columns is-multiline mt-6">
                         {
                           [...mujeresData].reverse().map(({node: { imagen, title } }) => {
