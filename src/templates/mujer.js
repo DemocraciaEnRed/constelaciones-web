@@ -71,7 +71,7 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
                 {ilustraciones?
                     <div className="pb-6 is-flex is-justify-content-space-evenly is-flex-wrap-wrap">
                         {ilustraciones.map(ilustracion=>
-                            <figure class="m-3 image img-ilustracion">
+                            <figure class="m-3 mx-0-mobile image img-ilustracion">
                                 <img src={`/assets/ilustraciones/${ilustracion.src}`} alt={`Imagen de ${ilustracion.alt}`}/>
                             </figure>
                         )}
