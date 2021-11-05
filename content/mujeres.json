@@ -41,9 +41,9 @@
         "audio": "Aliyoner.mp3",
         "page": true,
         "ilustraciones":[
-            {"src":"IMG_1179.PNG","alt":"Medicamentos antirretrovirales"},
-            {"src":"IMG_1192.PNG","alt":"Frontera"},
-            {"src":"IMG_1181.PNG","alt":"Hijes"}
+            {"src":"IMG_1179.png","alt":"Medicamentos antirretrovirales"},
+            {"src":"IMG_1192.png","alt":"Frontera"},
+            {"src":"IMG_1181.png","alt":"Hijes"}
         ],
         "video":"https://www.youtube.com/embed/LMbr5wjO9Xc"
     },
@@ -191,7 +191,7 @@
         "palabras_clave": [
             "MIGRAR", "TEMOR", "SENTIMIENTOS ENCONTRADOS"
         ],
-        "imagen": "Celianis.JPG",
+        "imagen": "Celianis.png",
         "imagen_extra": "",
         "audio": "",
         "page": true,

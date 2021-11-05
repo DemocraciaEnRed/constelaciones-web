@@ -13,30 +13,33 @@ if (typeof window !== "undefined") {
 
 const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, palabras_clave, imagen, imagen_extra, audio, audio_extra,ilustraciones,video } }) => {
     const [ showLightbox, setShowLightbox ] = useState(false);
-
     return (
       <main>
         <title>Mujeres - {title} </title>
           <Navbar />
           <section className="main-container bg-mujer py-6 hero is-fullheight">
             <div className="container is-fluid">
-                <h2 className="title vertical-title-desktop   is-size-1-desktop has-text-primary is-uppercase">{title}</h2>
-                <div className="container columns py-6-desktop ml-6-desktop pl-6-desktop mujer-container">
+                <h2 className={title=="Yerifer Eliana Maytin Serrano" || title=="Celianis Marluibes Pulido Moreno"? "title vertical-title-desktop   is-size-1-desktop has-text-primary is-uppercase yerifer":'title vertical-title-desktop   is-size-1-desktop has-text-primary is-uppercase'}>{title}</h2>
+                <div className="container columns is-vcentered py-6-desktop ml-6-desktop pl-6-desktop mujer-container">
                     <figure className="column is-half image img-mujer ml-6-desktop">
                         <img src={`/assets/mujeres/${imagen}`} />
                     </figure>
                     <div className="column">
-                        <div className="info-timeline mb-6">
-                            <div className="pointer-map has-text-white mb-0 pb-0"><img src={pointer} className="pr-2"/><span>{origen}</span></div>
-                            <ul>
-                                <li><span className="text">{palabras_clave[0]}</span><span className="timeline-circle"></span></li>
-                                <li><span className="text">{palabras_clave[1]}</span><span className="timeline-circle"></span></li>
-                                <li><span className="text">{palabras_clave[2]}</span><span className="timeline-circle last"></span></li>
+                        <div className=" is-hidden-touch  info-timeline mb-6"> 
+                            <ul className="is-flex is-justify-content-space-between">
+                                <li className="is-flex is-flex-direction-column">
+                                    <div className="pointer-map has-text-white mb-0 pb-0"><img src={pointer} className="pr-2"/><span>{origen}</span></div>
+                                    <span className="text">{palabras_clave[0]}</span><span className="timeline-circle"></span></li>
+                                <li className="is-flex is-flex-direction-column"><span className="text">{palabras_clave[1]}</span><span className="timeline-circle"></span></li>
+                                <li className="is-flex is-flex-direction-column">
+                                    <div className="pointer-map has-text-white"><img src={pointer} className="pr-2" /><span>{destino}</span>
+                                    </div>
+                                    <span className="text">{palabras_clave[2]}</span><span className="timeline-circle last"></span></li>
                             </ul>
-                            <div className="pointer-map has-text-white mt-3"><img src={pointer} className="pr-2" /><span>{destino}</span></div>
+                            
                         </div>
                         {audio &&
-                            <div className="my-6">
+                            <div className="pt-6 mb-6">
                                 <h4 className="title has-text-primary is-size-5 has-text-weight-semibold">Escuchando a {title}</h4>
                                 <AudioPlayer
                                     src={`/assets/mujeres/${audio}`}
@@ -69,7 +72,7 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
                     <div className="pb-6 is-flex is-justify-content-space-evenly is-flex-wrap-wrap">
                         {ilustraciones.map(ilustracion=>
                             <figure class="m-3 image img-ilustracion">
-                                <img src={`/assets/ilustraciones/${ilustracion.src}`} alt={`Image de ${ilustracion.alt}`}/>
+                                <img src={`/assets/ilustraciones/${ilustracion.src}`} alt={`Imagen de ${ilustracion.alt}`}/>
                             </figure>
                         )}
                         <figure class="m-3 image img-ilustracion">
@@ -92,21 +95,24 @@ const Mujer = ({ pageContext: { title, origen, destino, recorrido, motivacion, p
                                 <p className="has-text-white pb-6">{recorrido}</p>
                              </div>
                             <div className="column is-half has-text-centered">
-                                <div className="info-timeline mb-6">
-                                    <div className="pointer-map has-text-white mb-0 pb-0"><img src={pointer} className="pr-2"/><span>{origen}</span></div>
-                                    <ul>
-                                        <li><span className="text">{palabras_clave[0]}</span><span className="timeline-circle"></span></li>
-                                        <li><span className="text">{palabras_clave[1]}</span><span className="timeline-circle"></span></li>
-                                        <li><span className="text">{palabras_clave[2]}</span><span className="timeline-circle last"></span></li>
+                                <div className="is-hidden-desktop info-timeline mb-6">
+                                    <div className="pointer-map has-text-white ml-6 mb-4 pb-0 "><img src={pointer} className="pr-2"/><span>{origen}</span></div>
+                                    <ul className="is-block">
+                                        <li>
+                                            <span className="text">{palabras_clave[0]}</span><span className="timeline-circle"></span></li>
+                                        <li className="pt-6"><span className="text">{palabras_clave[1]}</span><span className="timeline-circle"></span></li>
+                                        <li className="pt-6">
+                                            <span className="text">{palabras_clave[2]}</span><span className="timeline-circle last"></span></li>
                                     </ul>
-                                    <div className="pointer-map has-text-white mt-3"><img src={pointer} className="pr-2" /><span>{destino}</span></div>
+                                    <div className="ml-6 pointer-map has-text-white mt-2"><img src={pointer} className="pr-2" /><span>{destino}</span>
+                                            </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     {motivacion &&
                         <div id="motivacion">
-                            <h4 className="title has-text-primary is-size-5 has-text-weight-semibold">¿Qué te motivó a ser lidereza?</h4>
+                            <h4 className="title has-text-primary is-size-5 has-text-weight-semibold">¿Qué te motivó a ser lideresa?</h4>
                             <p className="has-text-white pb-6">{motivacion}</p>
                         </div>
                     }

@@ -96,7 +96,7 @@ p{
         text-transform: uppercase;
         position: absolute;
         left: 20px;
-        top: 400px;
+        top: 450px;
         max-width: 200px;
         word-break: normal;
         &.organizaciones {
@@ -204,6 +204,10 @@ a.lideresas-img {
     filter: sepia(0.5);
 }
 
+.yerifer{
+    max-width: 500px;
+}
+
 .scroll-to-links {
     display: flex;
     flex-direction: column;
@@ -299,16 +303,38 @@ a.lideresas-img {
     .scroll-to-links {
         transform: scale(0.8);
     }
+    li:not(:first-of-type) span.timeline-circle::before{
+        position: absolute;
+        border: 1px dotted white;
+        width: 0;
+        height: 3rem;
+        display: block;
+        content: '';
+        right: 50%;
+        z-index: 1;
+        bottom: 40px;
+        margin-left: -1px;
+    }
 }
 
 .info-timeline {
     .pointer-map {
-        margin-left: 90px;
+        margin-left: 0px;
+        position: absolute;
+        top: 110px;
+        left: -30px;
+        @include touch {
+            position: inherit;
+        }
     }
     ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    li {
+        position:relative
+        }
     li span.timeline-circle {
         position: relative;
         border: 2px solid white;
@@ -317,33 +343,36 @@ a.lideresas-img {
         height: 40px;
         line-height: 40px;
         text-align: center;
-        margin-top: 40px;
+        margin-top: 0px;
         background-color: black;
         z-index: 2;
         display: inline-block;
       }
       li:first-of-type span.timeline-circle{
-          margin-top: 20px;
+          margin-top: 0px;
       }
-      li:not(:first-of-type) span.timeline-circle::before {
+      li:not(:first-of-type)::before {
         position: absolute;
         border: 1px dotted white;
         width: 0;
-        height: 40px;
+        width: 95%;
+        height: 0px;
         display: block;
         content: '';
-        left: 50%;
+        right: 100%;
         z-index: 1;
-        top: -45px;
+        top: 40px;
         margin-left: -1px;
+        @include touch{
+            display: none;
+        }
       }
       li span.text {
         color: white;
         text-transform: uppercase;
         display: inline-block;
         width: 120px;
-        text-align: right;
-        padding-right: 20px;
+        padding-right: 0px;
         position: relative;
         top: -15px;
       }

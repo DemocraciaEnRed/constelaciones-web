@@ -36,7 +36,9 @@ const Mujeres = () => {
     const getImage = (imagen, title, page) => {
         return (
             <>
-                <figure> 
+                <figure className={
+                    title=='Emily Nava' ||title=="Menfis Cedeño Cordero" ||title=="Yerifer Eliana Maytin Serrano"?
+                    "is-align-items-start":''}> 
                     <img src={`/assets/mujeres/${imagen}`} alt={title}/>
                 </figure>
                 <span className="text has-text-white is-size-5">{page && "Conoce la historia de"}<br /><span className="is-uppercase has-text-weight-bold">{title}</span></span>
