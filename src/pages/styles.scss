@@ -154,7 +154,7 @@ p{
     }
 }
 
-.background-circle{
+.with-background .background-circle{
     background:#fff4da
 }
 
@@ -231,6 +231,12 @@ a.lideresas-img {
 .img-ilustracion{
     width: 200px;
     height: 200px;
+    @include mobile{
+        width: 50%;
+        height: auto;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
 }
 
 .circle-link {

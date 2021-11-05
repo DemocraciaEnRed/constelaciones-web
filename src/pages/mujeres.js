@@ -90,7 +90,7 @@ const Mujeres = () => {
                                 return (
                                     <>
                                         <div className={`column ${classNameColumn}`}>
-                                            <div className="lideresas-img">
+                                            <div className="lideresas-img with-background">
                                                 {getImage(imagen, title, false)}
                                             </div>
                                         </div>
