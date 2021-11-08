@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import logo from "./assets/logo-constelaciones.svg"
 import bgestrellas from "./assets/bg-estrellas.gif"
+import bgestrellasStatic from './assets/bg-estrellas-static.png'
 import "./styles.scss"
 import Navbar from '../components/navbar'
 import { CSSTransition } from 'react-transition-group';
@@ -64,7 +65,7 @@ const IndexPage = () => {
         {intro && 
         <section className="hero is-fullheight">
           {slide === 0 && 
-            <div className="hero-body is-justify-content-center main-logo">
+            <div className="hero-body is-justify-content-center main-logo bg-estrellas" style={{backgroundImage: `url(${bgestrellasStatic})`}}>
             <figure className="image px-6">
               <img src={logo} alt="Constelaciones de Incidencia"/>
             </figure>
@@ -76,7 +77,7 @@ const IndexPage = () => {
           </div>
           }
           {slide === 1 && 
-            <div className="hero-body is-justify-content-center">
+            <div className="hero-body is-justify-content-center bg-estrellas" style={{backgroundImage: `url(${bgestrellasStatic})`}}>
             <h2 className="title has-text-centered title-intro">
               Constelaciones es una apuesta para 
               <br />
@@ -87,7 +88,7 @@ const IndexPage = () => {
           </div>
           }
           { slide === 2 &&
-            <div className="hero-body is-justify-content-center">
+            <div className="hero-body is-justify-content-center bg-estrellas" style={{backgroundImage: `url(${bgestrellasStatic})`}}>
             {/* <h3 className="title has-text-centered px-6 mx-6 title-intro">
             Esta iniciativa es realizada en el marco del proyecto Escuelita Tu Bandera es Mi Bandera, un proyecto colectivo realizado por Fundación Artemisas y el Derecho a No Obedecer, La Fundación Konrad Adenauer y el Centro para el Desarrollo Global (Center for Global Development) en donde fortalecimos las capacidades de participación e incidencia ciudadana, de lideresas de organizaciones migrantes y de las comunidades de acogida de Cali, Bogotá y Cúcuta.
             </h3> */}

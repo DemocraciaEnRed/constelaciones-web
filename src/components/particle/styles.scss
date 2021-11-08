@@ -39,12 +39,12 @@ $dot-count: 10; //cantidad de mujeres con pagina individual
     }
 
     &:nth-child(odd) {
-        animation: lighting 10s infinite;
+        animation: lighting 5s infinite;
     }
 
     &:nth-child(even) {
-        animation: lighting 8s infinite;
-        animation-delay: 5s;
+        animation: lighting 4s infinite;
+        animation-delay: 2.5s;
     }
 }
 
