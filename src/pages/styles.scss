@@ -302,6 +302,19 @@ a.lideresas-img {
     }
 }
 
+.mujer-container::before{
+    content:'';
+    position: absolute;
+    bottom: 3rem;
+    left:-5rem;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    width: 100%;
+    @include touch{
+        display: none;
+    }
+}
+
 @include touch {
     .mujer-container {
         flex-direction: column;
@@ -309,6 +322,14 @@ a.lideresas-img {
     .img-mujer img {
         width: 100%;
         height: auto;
+    }
+    .img-mujer::before{
+        content:'';
+        position: absolute;
+        bottom: 0rem;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.25) !important;
+        width: 100%;
     }
     .scroll-to-links {
         transform: scale(0.8);
