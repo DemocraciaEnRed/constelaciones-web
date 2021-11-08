@@ -1,6 +1,6 @@
 // Import Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
 
 // Update Bulma's global variables
 $family-sans-serif: 'Roboto', sans-serif;
@@ -207,7 +207,15 @@ a.lideresas-img {
     width: auto;
     filter: sepia(0.5);
 }
-
+.ilustraciones-container .description{
+    opacity: 0;
+    @include touch{
+        opacity: 1;
+    }
+}
+.ilustraciones-container:hover .description{
+    opacity: 1;
+}
 .yerifer{
     max-width: 500px;
 }
@@ -302,17 +310,13 @@ a.lideresas-img {
     }
 }
 
-.mujer-container::before{
-    content:'';
-    position: absolute;
-    bottom: 3rem;
-    left:-5rem;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.25) !important;
-    width: 100%;
-    @include touch{
-        display: none;
-    }
+.ilustraciones-container{
+    border-top:1px;
+    border-bottom:1px;
+    border-right: 0;
+    border-left: 0;
+    border-color:rgba(255, 255, 255, 0.25) !important;
+    border-style: solid;
 }
 
 @include touch {

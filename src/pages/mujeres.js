@@ -41,7 +41,7 @@ const Mujeres = () => {
                     "is-align-items-start background-circle":'background-circle'}> 
                     <img src={`/assets/mujeres/${imagen}`} alt={title}/>
                 </figure>
-                <span className="text has-text-white is-size-5">{page && "Conoce la historia de"}<br /><span className="is-uppercase has-text-weight-bold">{title}</span></span>
+                <span className="text has-text-white is-size-5 has-text-weight-light">{page && "Conoce la historia de"}<br /><span className="is-uppercase has-text-weight-light">{title}</span></span>
             </>
         )
     }
@@ -55,7 +55,7 @@ const Mujeres = () => {
                 <div className="container has-text-left py-6-desktop ml-6-desktop pl-6-desktop">
                     <div className="columns">
                         <div className="column">
-                            <p className="has-text-white is-size-2-tablet is-size-4-mobile py-6-desktop">Estas diez mujeres lideresas venezolanas comparten su historia de vida y la motivación detrás de sus liderazgos</p>
+                            <p className="has-text-white is-size-2-tablet is-size-4-mobile py-6-desktop has-text-weight-light">Estas diez mujeres lideresas venezolanas comparten su historia de vida y la motivación detrás de sus liderazgos</p>
                         </div>
                         <div className="column mujeres-scrolled">
                             <div className="columns is-multiline mt-6">
@@ -82,7 +82,7 @@ const Mujeres = () => {
                     </div>
                 </div>
                 <div className="container has-text-centered">
-                <h3 className="title is-size-3-tablet is-size-4-mobile mb-6 pb-6 has-text-primary">Este ejercicio fue realizado en el marco de la escuela de formación Tu Bandera es Mi Bandera y estas son las mujeres que hicieron parte del proceso en Cali, Bogotá y Cúcuta</h3>
+                <h3 className="title is-size-3-tablet is-size-4-mobile mb-6 pb-6 has-text-primary has-text-weight-light">Este ejercicio fue realizado en el marco de la escuela de formación Tu Bandera es Mi Bandera y estas son las mujeres que hicieron parte del proceso en Cali, Bogotá y Cúcuta</h3>
                     <div className="columns is-multiline mt-6">
                         {
                           [...mujeresData].reverse().map(({node: { imagen, title } }) => {

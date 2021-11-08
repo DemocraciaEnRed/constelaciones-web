@@ -44,7 +44,7 @@ const Particle = ({ mujeres }) => {
                                   </defs>
                               </svg>
                               
-                              <span className="text has-text-white">{title}</span>
+                              <span className="text has-text-white has-text-weight-light">{title}</span>
                             </div>
                         </React.Fragment>
                       )

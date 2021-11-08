@@ -65,11 +65,11 @@ const IndexPage = () => {
         {intro && 
         <section className="hero is-fullheight">
           {slide === 0 && 
-            <div className="hero-body is-justify-content-center main-logo bg-estrellas" style={{backgroundImage: `url(${bgestrellasStatic})`}}>
+            <div className="hero-body is-justify-content-center main-logo bg-estrellas" style={{backgroundImage: `url(${bgestrellas})`}}>
             <figure className="image px-6">
               <img src={logo} alt="Constelaciones de Incidencia"/>
             </figure>
-            <h1 className="title is-2">
+            <h1 className="title is-2 has-text-weight-light	">
               CONSTELACIONES
               <br />
               DE INCIDENCIA
@@ -77,18 +77,18 @@ const IndexPage = () => {
           </div>
           }
           {slide === 1 && 
-            <div className="hero-body is-justify-content-center bg-estrellas" style={{backgroundImage: `url(${bgestrellasStatic})`}}>
-            <h2 className="title has-text-centered title-intro">
+            <div className="hero-body is-justify-content-center bg-estrellas" style={{backgroundImage: `url(${bgestrellas})`}}>
+            <h2 className="title has-text-centered title-intro has-text-weight-light	">
               Constelaciones es una apuesta para 
               <br />
-              <span className="has-text-primary">visibilizar los liderazgos de mujeres migrantes y organizaciones sociales</span>
+              <span className="has-text-primary has-text-weight-light	">visibilizar los liderazgos de mujeres migrantes y organizaciones sociales</span>
               <br />
               que trabajan con migrantes.
             </h2>
           </div>
           }
           { slide === 2 &&
-            <div className="hero-body is-justify-content-center bg-estrellas" style={{backgroundImage: `url(${bgestrellasStatic})`}}>
+            <div className="hero-body is-justify-content-center bg-estrellas" style={{backgroundImage: `url(${bgestrellas})`}}>
             {/* <h3 className="title has-text-centered px-6 mx-6 title-intro">
             Esta iniciativa es realizada en el marco del proyecto Escuelita Tu Bandera es Mi Bandera, un proyecto colectivo realizado por Fundación Artemisas y el Derecho a No Obedecer, La Fundación Konrad Adenauer y el Centro para el Desarrollo Global (Center for Global Development) en donde fortalecimos las capacidades de participación e incidencia ciudadana, de lideresas de organizaciones migrantes y de las comunidades de acogida de Cali, Bogotá y Cúcuta.
             </h3> */}
