@@ -3,6 +3,7 @@ import slugify from 'slugify'
 import "./styles.scss"
 import Navbar from '../components/navbar'
 import { useMujeresData } from '../hooks/useMujeresData'
+import { Link } from 'gatsby'
 
 const Mujeres = () => {
     const mujeresData = useMujeresData()
@@ -66,9 +67,9 @@ const Mujeres = () => {
                                             <>
                                                 {page ?
                                                     <div className={`column has-text-centered ${classNameColumn}`}>
-                                                        <a href={`/mujer/${slugify(title)}`} className="lideresas-img">
+                                                        <Link to={`/mujer/${slugify(title)}`} className="lideresas-img">
                                                             {getImage(imagen, title, page)}
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 : null
                                                 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import slugify from 'slugify'
+import { navigate } from "gatsby"
 import "./styles.scss"
 
 const Particle = ({ mujeres }) => {    
@@ -8,13 +9,15 @@ const Particle = ({ mujeres }) => {
         //mobile
         if(window.innerWidth < 600) {
           if (clicked && clicked === link) {
-            window.location.href = link
+            // window.location.href = link
+            navigate(link)
           } else {
             setClicked(link)
           }
         // desktop
         } else {
-          window.location.href = link
+          // window.location.href = link
+          navigate(link)
         }
     }
     return (

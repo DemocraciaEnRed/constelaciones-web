@@ -6,6 +6,7 @@ import Navbar from '../components/navbar'
 import { CSSTransition } from 'react-transition-group';
 import { useMujeresData } from '../hooks/useMujeresData'
 import Particle from '../components/particle';
+import {navigate} from 'gatsby'
 
 const IndexPage = () => {
   const [loading, setLoading] = useState(true);
@@ -14,13 +15,33 @@ const IndexPage = () => {
 
   const skipIntro = () => {
     setIntro(false);
-    sessionStorage.setItem('introConstelaciones', true);
+    // sessionStorage.setItem('introConstelaciones', true);
   }
 
   useEffect(() => {
+    if(!window.musicPlayed){
+      console.log('play music');
+      let theMusic = (new Audio('/assets/intro-music.mp3'));
+      // set the volume of theMusic to 0.5
+      theMusic.volume = 0.1;
+      // play the music
+      theMusic.play().then(() => {
+        console.log('music played');
+        window.musicPlayed = true;
+      }).catch( () => {
+        navigate('/')
+      });
+    } else {
+      console.log('music already played')
+    }
     setLoading(false)
-    const needsIntro = sessionStorage.getItem('introConstelaciones');
-    if (!needsIntro) {
+    // get from the URL the query param named intro
+    const urlParams = new URLSearchParams(window.location.search);
+    const needsIntro = urlParams.get('intro');
+
+    // const needsIntro = 
+    // const needsIntro = false
+    if (needsIntro) {
       setTimeout(() => {
         if (intro) {
           setSlide(1);
@@ -30,17 +51,18 @@ const IndexPage = () => {
         if (intro) {
           setSlide(2);
         }
-      }, 7000)
+      }, 9000)
       setTimeout(() => {
         if (intro) {
           skipIntro()
         }
-      }, 15000)
+      }, 12500)
     } else {
       setIntro(false);
     }
    
   }, [])
+
 
   const mujeresData = useMujeresData()
   return (
@@ -66,14 +88,10 @@ const IndexPage = () => {
         <section className="hero is-fullheight">
           {slide === 0 && 
             <div className="hero-body is-justify-content-center main-logo bg-estrellas" style={{backgroundImage: `url(${bgestrellas})`}}>
-            <figure className="image px-6">
-              <img src={logo} alt="Constelaciones de Incidencia"/>
-            </figure>
-            <h1 className="title is-2 has-text-weight-light	">
-              CONSTELACIONES
-              <br />
-              DE INCIDENCIA
-            </h1>
+            <div className="is-flex is-flex-direction-row is-justify-content-center is-align-items-center">
+              <img src={logo} className="image" width={150}/>
+              <h1 className="title is-2 ml-3 has-text-left">CONSTELACIONES<br/>DE INCIDENCIA</h1>
+            </div>
           </div>
           }
           {slide === 1 && 
@@ -95,7 +113,7 @@ const IndexPage = () => {
             <h3 className="title has-text-centered px-6 mx-6 title-intro has-text-weight-light">Haz click en las estrellas para conocer historias de lideresas</h3>
           </div>
           }
-          <button className="button skip-intro is-primary" onClick={skipIntro}>Saltar intro</button>
+          {/* <button className="button skip-intro is-primary" onClick={skipIntro}>Saltar intro</button> */}
         </section>
         }
         </>

@@ -4,6 +4,7 @@ import AudioPlayer from "react-h5-audio-player";
 import "../pages/styles.scss";
 import Navbar from "../components/navbar";
 import pointer from "../pages/assets/pointer.svg";
+import { Link } from 'gatsby'
 
 //Sets smooth scroll animation for anchor links
 if (typeof window !== "undefined") {
@@ -89,13 +90,13 @@ const Mujer = ({
             </div>
 
             {/* <div className="scroll-to-links py-6">
-                        <a className="circle-link my-6" href="#recorrido">
+                        <Link className="circle-link my-6" to="#recorrido">
                             <span>recorrido</span>
-                        </a>
+                        </Link>
                         {motivacion &&
-                            <a className="circle-link my-6" href="#motivacion">
+                            Link className="circle-link my-6" to="#motivacion">
                                 <span>motivación</span>
-                            </a>
+                            </Link>
                         }
                     </div> */}
           </div>
@@ -209,12 +210,12 @@ const Mujer = ({
               </div>
             )}
           </div>
-          <a
+          <Link
             className="circle-link circle-link-big my-6 mx-auto has-text-weight-light"
-            href="/mujeres"
+            to="/mujeres"
           >
             <span>Sigue conociendo a las lideresas</span>
-          </a>
+          </Link>
           <div className="is-flex is-justify-content-end is-align-items-center">
             <h3 className="has-text-white has-text-weight-light">Ilustraciones hechas por</h3>
             <figure className="m-3 image is-96x96 ">

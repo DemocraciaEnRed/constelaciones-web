@@ -6,7 +6,7 @@ import Breadcrumb from '../components/breadcrumb'
 import BreadcrumbItem from '../components/breadcrumb/item'
 import Map from '../components/map'
 import Table from '../components/table'
-
+import {Link} from 'gatsby'
 const Organizaciones = () => {
     const [ data, setData ] = useState([])
     const [ dataLoaded, setDataLoaded ] = useState(false) 
@@ -37,7 +37,7 @@ const Organizaciones = () => {
               link = `mailto:${row.original.contact}`;
             }
             return (
-              <a className="has-text-primary" href={link}>{row.original.contact}</a>
+              <Link className="has-text-primary" href={link}>{row.original.contact}</Link>
             )
           }
         },

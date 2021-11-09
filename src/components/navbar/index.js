@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import logo from "../../pages/assets/logo-constelaciones.svg"
+import { Link } from 'gatsby'
 import "./styles.scss"
 
 const Navbar = () => {
@@ -8,13 +9,13 @@ const Navbar = () => {
     return (
         <nav className='navbar' role='navigation' aria-label='main navigation'>
             <div className='navbar-brand'>
-                <a href='/' className='navbar-item'>
+                <Link to='/home' className='navbar-item'>
                     <img
                         src={logo}
                         alt='Logo'
                         width='40'
                     />
-                </a>
+                </Link>
                 <a
                     onClick={() => {
                         setisActive(!isActive)
@@ -33,18 +34,18 @@ const Navbar = () => {
             </div>
             <div id='navbarBasicExample' className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
             <div className='navbar-item navbar-item-wrapper'>
-                <a href='/' className='navbar-item'>
+                <Link to='/' className='navbar-item'>
                 Home
-                </a>
-                <a href='/mujeres' className='navbar-item'>
+                </Link>
+                <Link to='/mujeres' className='navbar-item'>
                 Mujeres
-                </a>
-                <a href='/quienes-somos' className='navbar-item'>
+                </Link>
+                <Link to='/quienes-somos' className='navbar-item'>
                 Quiénes somos
-                </a>
-                <a href='/organizaciones' className='navbar-item'>
+                </Link>
+                <Link to='/organizaciones' className='navbar-item'>
                 Organizaciones
-                </a>
+                </Link>
             </div>
         </div>
         </nav>
