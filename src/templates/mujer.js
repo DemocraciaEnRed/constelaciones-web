@@ -111,7 +111,7 @@ const Mujer = ({
                 </figure>
               ))}
               <div className="columns is-centered mt-3 description">
-                <div className="column is-half"><h3 className="has-text-primary has-text-centered is-size-6 has-text-weight-light ">Estos son los trazos que representan los aspectos en común de las historias de migración de las mujeres desde que partieron de Venezuela hasta llegar a Colombia.</h3></div>
+                <div className="column is-half"><h3 className="has-text-primary has-text-centered is-size-6 has-text-weight-light ">Son muchos los trazos que comparten las mujeres que han migrado desde Venezuela a Colombia, estas ilustraciones los representan</h3></div>
               
               </div>
             </div>
@@ -175,13 +175,20 @@ const Mujer = ({
                 <h4 className="title has-text-primary is-size-5 has-text-weight-light is-uppercase">
                 Ventana a la historia de su migración
                 </h4>
-                <figure
-                  className="image image-sepia"
-                  onClick={() => setShowLightbox(true)}
-                  onKeyDown={() => setShowLightbox(true)}
-                >
-                  <img src={`/assets/mujeres/${imagen_extra}`} />
-                </figure>
+                <div className="ventana-container">
+                  <figure
+                    className="image image-sepia"
+                    onClick={() => setShowLightbox(true)}
+                    onKeyDown={() => setShowLightbox(true)}
+                  >
+                    <img src={`/assets/mujeres/${imagen_extra}`} />
+                  </figure>
+                  <div className="columns">
+                      <h3 className="column is-half description has-text-primary is-size-6 has-text-weight-light ">Recuerdo de su camino</h3>
+                  </div>
+               
+                  
+                  </div>
                 {showLightbox && (
                   <Lightbox
                     mainSrc={`/assets/mujeres/${imagen_extra}`}

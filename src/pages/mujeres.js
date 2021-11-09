@@ -55,7 +55,7 @@ const Mujeres = () => {
                 <div className="container has-text-left py-6-desktop ml-6-desktop pl-6-desktop">
                     <div className="columns">
                         <div className="column">
-                            <p className="has-text-white is-size-2-tablet is-size-4-mobile py-6-desktop has-text-weight-light">Estas diez mujeres lideresas venezolanas comparten su historia de vida y la motivación detrás de sus liderazgos</p>
+                            <p className="has-text-white is-size-2-tablet is-size-5-mobile py-6-desktop has-text-weight-light">Estas diez mujeres lideresas venezolanas comparten su historia de vida y la motivación detrás de sus liderazgos</p>
                         </div>
                         <div className="column mujeres-scrolled">
                             <div className="columns is-multiline mt-6">

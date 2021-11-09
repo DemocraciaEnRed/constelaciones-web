@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import logo from "./assets/logo-constelaciones.svg"
 import bgestrellas from "./assets/bg-estrellas.gif"
-import bgestrellasStatic from './assets/bg-estrellas-static.png'
 import "./styles.scss"
 import Navbar from '../components/navbar'
 import { CSSTransition } from 'react-transition-group';
@@ -59,6 +58,7 @@ const IndexPage = () => {
           <section className="hero is-fullheight bg-estrellas" style={{backgroundImage: `url(${bgestrellas})`}}>
             <Navbar />
             <Particle mujeres={mujeresData} />
+            
           </section>
           </>
         </CSSTransition>
@@ -92,7 +92,7 @@ const IndexPage = () => {
             {/* <h3 className="title has-text-centered px-6 mx-6 title-intro">
             Esta iniciativa es realizada en el marco del proyecto Escuelita Tu Bandera es Mi Bandera, un proyecto colectivo realizado por Fundación Artemisas y el Derecho a No Obedecer, La Fundación Konrad Adenauer y el Centro para el Desarrollo Global (Center for Global Development) en donde fortalecimos las capacidades de participación e incidencia ciudadana, de lideresas de organizaciones migrantes y de las comunidades de acogida de Cali, Bogotá y Cúcuta.
             </h3> */}
-            <h3 className="title has-text-centered px-6 mx-6 title-intro">Haz click en las estrellas para conocer historias de lideresas</h3>
+            <h3 className="title has-text-centered px-6 mx-6 title-intro has-text-weight-light">Haz click en las estrellas para conocer historias de lideresas</h3>
           </div>
           }
           <button className="button skip-intro is-primary" onClick={skipIntro}>Saltar intro</button>

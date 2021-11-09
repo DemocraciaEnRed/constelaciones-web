@@ -153,7 +153,9 @@ p{
         }
     }
 }
-
+.mujeres-scrolled .background-circle{
+    border:1px solid #fff
+}
 .with-background .background-circle{
     background:#fff4da
 }
@@ -207,13 +209,13 @@ a.lideresas-img {
     width: auto;
     filter: sepia(0.5);
 }
-.ilustraciones-container .description{
+.ilustraciones-container .description, .ventana-container .description{
     opacity: 0;
     @include touch{
         opacity: 1;
     }
 }
-.ilustraciones-container:hover .description{
+.ilustraciones-container:hover .description, .ventana-container:hover .description{
     opacity: 1;
 }
 .yerifer{
@@ -425,6 +427,7 @@ a.lideresas-img {
 
 .image-sepia img {
     filter: sepia(0.8);
+    width: max-content;
 }
 
 .image.image-sepia img {
