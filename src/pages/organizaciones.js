@@ -37,7 +37,7 @@ const Organizaciones = () => {
               link = `mailto:${row.original.contact}`;
             }
             return (
-              <Link className="has-text-primary" href={link}>{row.original.contact}</Link>
+              <a className="has-text-primary" href={link}>{row.original.contact}</a>
             )
           }
         },

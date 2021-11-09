@@ -6,6 +6,13 @@ import "./styles.scss"
 const Navbar = () => {
     const [isActive, setisActive] = useState(false)
 
+    function stopMusic() {
+        if(window.theSong){
+            window.musicPlaying = false
+            window.theSong.pause()
+        }
+    }
+
     return (
         <nav className='navbar' role='navigation' aria-label='main navigation'>
             <div className='navbar-brand'>
@@ -46,6 +53,12 @@ const Navbar = () => {
                 <Link to='/organizaciones' className='navbar-item'>
                 Organizaciones
                 </Link>
+                {/* {
+                    window.musicPlaying && 
+                    <a onClick={stopMusic} className="navbar-item">
+                        Silenciar musica
+                    </a>
+                } */}
             </div>
         </div>
         </nav>

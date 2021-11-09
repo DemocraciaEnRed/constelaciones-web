@@ -76,10 +76,11 @@ p{
 @include touch {
     .main-logo {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
         text-align: center !important;
         .title {
-            font-size: 30px;
+            font-size: 25px;
         }
     }
     .title-intro {
