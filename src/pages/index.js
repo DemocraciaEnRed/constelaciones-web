@@ -2,6 +2,8 @@ import React from "react"
 import "./styles.scss"
 import bgestrellas from "./assets/bg-estrellas.gif"
 import logo from "../pages/assets/logo-constelaciones.svg"
+import logoWhiteLines from "../pages/assets/logo-white-lines.svg"
+import logoYellowLine from "../pages/assets/logo-yellow-line.svg"
 import {Link} from 'gatsby'
 
 const IndexPage = () => { 
@@ -12,8 +14,14 @@ const IndexPage = () => {
         <div className="hero-body main-logo">
           <div className="container is-justify-content-center has-text-centered">
           <div className="is-flex is-flex-direction-row is-justify-content-center is-align-items-center">
-          <img src={logo} className="image is-hidden-touch" width={150}/>
-          <img src={logo} className="image is-hidden-desktop" width={60}/>
+          {/* <img src={logo} className="logo-intro image is-hidden-touch" width={150}/>
+          <img src={logo} className="logo-intro image is-hidden-desktop" width={60}/> */}
+          
+          <div className="is-relative"><img src={logoWhiteLines} className="logo-intro white-lines is-hidden-touch" width={150}/>
+            <img src={logoYellowLine} className="logo-intro yellow-lines image is-hidden-touch" width={150}/>
+            <img src={logoWhiteLines} className="logo-intro white-lines is-hidden-desktop" width={60}/>
+            <img src={logoYellowLine} className="logo-intro yellow-lines image is-hidden-desktop" width={60}/>
+            </div>
           <h1 className="title is-2 ml-3 has-text-left">CONSTELACIONES<br/>DE INCIDENCIA</h1>
         </div>
           <br/> 

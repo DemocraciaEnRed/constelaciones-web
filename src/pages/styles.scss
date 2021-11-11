@@ -73,6 +73,23 @@ p{
     white-space: -o-pre-wrap;
 }
 
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.logo-intro.white-lines{
+    animation: spin 15s linear infinite;
+}
+.logo-intro.yellow-lines{
+    position:absolute;
+    top: 0;
+}
+
 @include touch {
     .main-logo {
         display: flex;
@@ -399,11 +416,19 @@ a.lideresas-img {
         content: '';
         right: 100%;
         z-index: 1;
-        top: 40px;
         margin-left: -1px;
         @include touch{
             display: none;
         }
+      }
+      li:nth-of-type(2)::before{
+        top: 66px;
+        transform: rotate(-23deg);
+      }
+      li:nth-of-type(3)::before{
+        width: 100%;
+        top: 12px;
+        transform: rotate(18deg);
       }
       li span.text {
         color: white;
