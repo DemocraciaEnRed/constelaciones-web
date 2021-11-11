@@ -51,7 +51,7 @@ const Mujer = ({
             </figure>
             <div className="column">
               <div className=" is-hidden-touch  info-timeline pb-6 mb-6">
-                <ul className="is-flex is-justify-content-space-between">
+                <ul className="is-flex is-justify-content-space-between is-align-items-flex-end">
                   <li className="is-flex is-flex-direction-column">
                     <div className="pointer-map has-text-white mb-0 pb-0">
                       <img src={pointer} className="pr-2" />
@@ -62,7 +62,7 @@ const Mujer = ({
                   </li>
                   <li className="is-flex is-flex-direction-column">
                     <span className="text">{palabras_clave[1]}</span>
-                    <span className="timeline-circle"></span>
+                    <span className="timeline-circle mb-6"></span>
                   </li>
                   <li className="is-flex is-flex-direction-column">
                     <div className="pointer-map has-text-white">
