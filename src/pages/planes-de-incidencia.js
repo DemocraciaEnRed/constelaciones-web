@@ -7,7 +7,7 @@ function PlanesDeIncidencia(){
     const [place,setPlace]=useState('bogota')
     const placeObject={
         bogota:{
-            name:"Bogota",
+            name:"Bogotà",
             objetivo:"objetivo-bogota",
             grupo: "Incidencia Bogota"
 
@@ -19,7 +19,7 @@ function PlanesDeIncidencia(){
 
         },
         cucuta:{
-            name:"Cucuta",
+            name:"Cùcuta",
             objetivo:"objetivo-Cucuta",
             grupo: "Incidencia Cucuta"
 
@@ -48,10 +48,13 @@ function PlanesDeIncidencia(){
                         <button onClick={()=>handleOnclick('cucuta')}className="button is-normal is-warning is-outlined">Cùcuta</button>
                         <button onClick={()=>handleOnclick('bogota')}className="button is-normal is-warning is-outlined">Bogotà</button>
                     </div>
-                    <div></div>
                     <h3 className="has-text-primary is-size-4">Grupo:< span className="mt-3 has-text-white">{placeObject[place].grupo}</span> </h3>
-                    <h3 className="mt-6 has-text-primary has-text-centered is-size-4">Objetivo</h3>
-                    <p className="has-text-centered has-text-white">{placeObject[place].objetivo}</p>
+                    <div className="is-flex is-flex-direction-column is-align-items-center">
+                        
+                        <h3 className="mt-6 has-text-primary has-text-centered is-size-4">Objetivo</h3>
+                        <p className="has-text-centered has-text-white">{placeObject[place].objetivo}</p>
+                        <button className="mt-4 button is-normal is-warning is-outlined">Descargá el plan de {placeObject[place].name}</button>
+                    </div>
                 </div>
                
             </section>
