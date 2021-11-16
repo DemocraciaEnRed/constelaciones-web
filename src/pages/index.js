@@ -10,12 +10,28 @@ const IndexPage = () => {
   return (
     <main>
       <title>CONSTELACIONES DE INCIDENCIA</title>
+      <meta name="title" content="CONSTELACIONES DE INCIDENCIA"/>
+      <meta name="description" content="Constelaciones es una apuesta para visibilizar los liderazgos de mujeres migrantes y organizaciones sociales que trabajan con migrantes"/>
+
+      <meta property="og:type" content="website"/>
+      <meta property="og:url" content="https://metatags.io/"/>
+      <meta property="og:title" content="CONSTELACIONES
+      DE INCIDENCIA"/>
+      <meta property="og:description" content="Constelaciones es una apuesta para visibilizar los liderazgos de mujeres migrantes y organizaciones sociales que trabajan con migrantes"/>
+      <meta property="og:image" content="./assets/logo-constelaciones.svg"/>
+
+
+      <meta property="twitter:card" content="summary_large_image"/>
+      <meta property="twitter:url" content="https://metatags.io/"/>
+      <meta property="twitter:title" content="CONSTELACIONES
+      DE INCIDENCIA"/>
+      <meta property="twitter:description" content="Constelaciones es una apuesta para visibilizar los liderazgos de mujeres migrantes y organizaciones sociales que trabajan con migrantes"/>
+      <meta property="twitter:image" content="./assets/logo-constelaciones.svg"/>
+      
       <section className="hero is-fullheight proximamente" style={{backgroundImage: `url(${bgestrellas})`}}>
         <div className="hero-body main-logo">
           <div className="container is-justify-content-center has-text-centered">
           <div className="is-flex is-flex-direction-row is-justify-content-center is-align-items-center">
-          {/* <img src={logo} className="logo-intro image is-hidden-touch" width={150}/>
-          <img src={logo} className="logo-intro image is-hidden-desktop" width={60}/> */}
           
           <div className="is-relative"><img src={logoWhiteLines} className="logo-intro white-lines is-hidden-touch" width={150}/>
             <img src={logoYellowLine} className="logo-intro yellow-lines image is-hidden-touch" width={150}/>
