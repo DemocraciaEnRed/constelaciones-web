@@ -135,6 +135,21 @@ p{
     }
 }
 
+// incidencia
+
+.mapa-incidencia{
+    width:100%;
+    border: 1px solid;
+    border-radius: 50px;
+    @include mobile{
+        border-radius: 30px;
+    }
+}
+.lightbox-mapa-incidencia{
+    background-color: #000;
+}
+
+
 // mujeres
 .lideresas-img {
     display: inline-block;
