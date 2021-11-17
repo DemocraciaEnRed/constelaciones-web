@@ -148,6 +148,17 @@ p{
 .lightbox-mapa-incidencia{
     background-color: #000;
 }
+@keyframes appear {
+    0% {
+      opacity:0;
+    }
+    100% {
+        opacity:100%;
+    }
+}
+.show-text{
+    animation: appear 5s ;
+}
 
 
 // mujeres
