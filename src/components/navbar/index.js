@@ -53,6 +53,9 @@ const Navbar = () => {
                 <Link to='/organizaciones' className='navbar-item'>
                 Organizaciones
                 </Link>
+                <Link to='/planes-de-incidencia' className='navbar-item'>
+                Planes de incidencia
+                </Link>
                 {/* {
                     window.musicPlaying && 
                     <a onClick={stopMusic} className="navbar-item">
