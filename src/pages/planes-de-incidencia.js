@@ -71,8 +71,8 @@ function PlanesDeIncidencia(){
                     <h2 className="has-text-weight-light title has-text-white has-text-centered is-size-2-desktop is-uppercase">Donde actuamos</h2>
                     <div className="my-3 is-flex is-justify-content-space-evenly">
                         <button onClick={()=>handleOnclick('cali')}className="button is-normal is-warning is-outlined">Cali</button>
-                        <button onClick={()=>handleOnclick('cucuta')}className="button is-normal is-warning is-outlined">Cùcuta</button>
-                        <button onClick={()=>handleOnclick('bogota')}className="button is-normal is-warning is-outlined">Bogotà</button>
+                        <button onClick={()=>handleOnclick('cucuta')}className="button is-normal is-warning is-outlined">Cúcuta</button>
+                        <button onClick={()=>handleOnclick('bogota')}className="button is-normal is-warning is-outlined">Bogotá</button>
                     </div>
                     <figure className="column is-three-fifths is-offset-one-fifth is-hidden-touch my-4 p-5 mapa-incidencia">
                         <img src={place.mapa} alt={`Mapa de ${place.name}`} />    
@@ -93,7 +93,7 @@ function PlanesDeIncidencia(){
                     <div className="is-flex is-flex-direction-column is-align-items-center column is-three-fifths is-offset-one-fifth">                                         
                         <h3 className="mt-6 has-text-primary has-text-centered is-size-4">Objetivo</h3>
                         <p className="has-text-centered has-text-white">{place.objetivo}</p>
-                        <a href={place.descargable} className="mt-6 button is-normal is-warning is-outlined" download="Plotter">Descargá el plan de {place.name}</a>
+                        <a href={place.descargable} className="mt-6 button is-normal is-warning is-outlined" target="_blank">Descargá el plan de {place.name}</a>
                     </div>
                 </div>
                
