@@ -93,7 +93,7 @@ function PlanesDeIncidencia(){
                     <div className="is-flex is-flex-direction-column is-align-items-center column is-three-fifths is-offset-one-fifth">                                         
                         <h3 className="mt-6 has-text-primary has-text-centered is-size-4">Objetivo</h3>
                         <p className="has-text-centered has-text-white">{place.objetivo}</p>
-                        <a href={place.descargable} className="mt-6 button is-normal is-warning is-outlined" target="_blank">Descargá el plan de {place.name}</a>
+                        <a href={place.descargable} className="mt-6 button is-normal is-warning is-outlined" target="_blank">Descarga el plan de {place.name}</a>
                     </div>
                 </div>
                

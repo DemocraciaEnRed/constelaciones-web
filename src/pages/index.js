@@ -18,7 +18,7 @@ const IndexPage = () => {
       <meta property="og:title" content="CONSTELACIONES
       DE INCIDENCIA"/>
       <meta property="og:description" content="Constelaciones es una apuesta para visibilizar los liderazgos de mujeres migrantes y organizaciones sociales que trabajan con migrantes"/>
-      <meta property="og:image" content="./assets/logo-constelaciones.svg"/>
+      <meta property="og:image" content="./assets/share.png"/>
 
 
       <meta property="twitter:card" content="summary_large_image"/>
@@ -26,7 +26,7 @@ const IndexPage = () => {
       <meta property="twitter:title" content="CONSTELACIONES
       DE INCIDENCIA"/>
       <meta property="twitter:description" content="Constelaciones es una apuesta para visibilizar los liderazgos de mujeres migrantes y organizaciones sociales que trabajan con migrantes"/>
-      <meta property="twitter:image" content="./assets/logo-constelaciones.svg"/>
+      <meta property="twitter:image" content="./assets/share.png"/>
       
       <section className="hero is-fullheight proximamente" style={{backgroundImage: `url(${bgestrellas})`}}>
         <div className="hero-body main-logo">
