@@ -14,19 +14,19 @@ const IndexPage = () => {
       <meta name="description" content="Constelaciones es una apuesta para visibilizar los liderazgos de mujeres migrantes y organizaciones sociales que trabajan con migrantes"/>
 
       <meta property="og:type" content="website"/>
-      <meta property="og:url" content="https://metatags.io/"/>
+      <meta property="og:url" content="https://constelaciones.co/"/>
       <meta property="og:title" content="CONSTELACIONES
       DE INCIDENCIA"/>
       <meta property="og:description" content="Constelaciones es una apuesta para visibilizar los liderazgos de mujeres migrantes y organizaciones sociales que trabajan con migrantes"/>
-      <meta property="og:image" content="./assets/share.png"/>
+      <meta property="og:image" content="https://constelaciones.co/assets/share.png"/>
 
 
       <meta property="twitter:card" content="summary_large_image"/>
-      <meta property="twitter:url" content="https://metatags.io/"/>
+      <meta property="twitter:url" content="https://constelaciones.co/"/>
       <meta property="twitter:title" content="CONSTELACIONES
       DE INCIDENCIA"/>
       <meta property="twitter:description" content="Constelaciones es una apuesta para visibilizar los liderazgos de mujeres migrantes y organizaciones sociales que trabajan con migrantes"/>
-      <meta property="twitter:image" content="./assets/share.png"/>
+      <meta property="twitter:image" content="https://constelaciones.co/assets/share.png"/>
       
       <section className="hero is-fullheight proximamente" style={{backgroundImage: `url(${bgestrellas})`}}>
         <div className="hero-body main-logo">
