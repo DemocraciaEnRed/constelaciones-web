@@ -10,9 +10,9 @@ import Seo from "../components/seo"
 const IndexPage = () => { 
   return (
     <React.Fragment>
-      <Seo/>
+      {/* <Seo/> */}
     <main>
-      {/* <title>CONSTELACIONES DE INCIDENCIA</title>
+      <title>CONSTELACIONES DE INCIDENCIA</title>
       <meta name="title" content="CONSTELACIONES DE INCIDENCIA"/>
       <meta name="description" content="Constelaciones es una apuesta para visibilizar los liderazgos de mujeres migrantes y organizaciones sociales que trabajan con migrantes"/>
 
@@ -30,7 +30,7 @@ const IndexPage = () => {
       DE INCIDENCIA"/>
       <meta property="twitter:description" content="Constelaciones es una apuesta para visibilizar los liderazgos de mujeres migrantes y organizaciones sociales que trabajan con migrantes"/>
       <meta property="twitter:image" content="https://constelaciones.co/share.png"/>
-       */}
+      
       <section className="hero is-fullheight proximamente" style={{backgroundImage: `url(${bgestrellas})`}}>
         <div className="hero-body main-logo">
           <div className="container is-justify-content-center has-text-centered">
